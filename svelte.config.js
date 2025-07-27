@@ -10,7 +10,7 @@ export default {
   kit: {
     adapter: adapter(),
     paths: {
-      base: '/your-repo-name' // replace with your repo name
+      base: '/idjwi' // replace with your repo name
     }
   }
 };
