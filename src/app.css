@@ -1,0 +1,137 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.leaflet-control-zoom {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 1000 !important;
+}
+
+.leaflet-container {
+  background-color: white !important;
+}
+
+.leaflet-control-attribution {
+  display: none !important;
+}
+
+.leaflet-popup {
+  left: 0 !important;
+  top: 0 !important;
+  margin: 0 !important;
+  transform: none !important;
+  position: fixed !important;
+  max-width: 30vw !important;
+  width: 30vw !important;
+  height: 100vh !important;
+  min-height: 100vh !important;
+  max-height: 100vh !important;
+  border-radius: 0 !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 0 !important;
+  height: 100%;
+  background: #fff;
+  overflow-y: auto;
+  box-shadow: none !important;
+}
+
+.leaflet-popup-content {
+  width: 80% !important;
+  max-width: 80% !important;
+  height: 80%;
+  box-sizing: border-box;
+}
+
+.leaflet-popup-tip-container {
+  display: none !important;
+}
+
+.custom-svg-icon.svg-active svg {
+  filter: drop-shadow(0 0 8px #000);
+  transform: scale(1.2);
+  transition:
+    filter 0.3s,
+    transform 0.3s;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
