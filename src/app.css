@@ -1,6 +1,15 @@
+@font-face {
+  font-family: 'Karla-Cedille';
+  src: url('./assets/fonts/Cedille.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 500;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: "Karla-Cedille", sans-serif;
+  font-optical-sizing: auto;
+  line-height: 1.25;
+  font-size: 1em;
   font-weight: 400;
 
   color-scheme: light dark;
@@ -13,14 +22,45 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.marker-label {
+  font-family: "Karla-Cedille", sans-serif;
+  font-size: 1em;
+  color: red;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 2px 8px;
+  border-radius: 6px;
+  margin-bottom: 2px;
+  white-space: nowrap;
+  font-weight: 800;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+  pointer-events: none;
+}
+
 a {
   font-weight: 500;
-  color: #646cff;
+  color: grey;
   text-decoration: inherit;
+  text-decoration: underline;
 }
 
 a:hover {
-  color: #535bf2;
+  color: grey;
 }
 
 body {
@@ -45,7 +85,7 @@ h1 {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 0.2em 0.4em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -72,6 +112,7 @@ button:focus-visible {
 
 .leaflet-container {
   background-color: white !important;
+
 }
 
 .leaflet-control-attribution {
@@ -79,25 +120,32 @@ button:focus-visible {
 }
 
 .leaflet-popup {
-  left: 0 !important;
-  top: 0 !important;
   margin: 0 !important;
-  transform: none !important;
-  position: fixed !important;
+  /* transform: translate3d(420px, 350px, 0px) !important; */
   max-width: 30vw !important;
   width: 30vw !important;
   height: 100vh !important;
-  min-height: 100vh !important;
-  max-height: 100vh !important;
+  min-height: 30vh !important;
+  max-height: 30vh !important;
   border-radius: 0 !important;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   z-index: 10000;
+  pointer-events: auto !important;
+  margin-bottom: 10px !important;
+}
+
+.leaflet-popup.leaflet-zoom-animated {
+  position: fixed !important;
 }
 
 .leaflet-popup-content-wrapper {
+  font-family: "Karla-Cedille", sans-serif;
+  font-size: 2em;
   border-radius: 0 !important;
   height: 100%;
   background: #fff;
+  background-image: url('./assets/orchard.svg');
+  background-size: 100px 100px;
   overflow-y: auto;
   box-shadow: none !important;
 }
@@ -121,6 +169,128 @@ button:focus-visible {
     transform 0.3s;
 }
 
+.modal-bottom-right {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px 24px 16px 24px;
+  margin-bottom: 100px;
+  z-index: 20000;
+  min-width: 220px;
+  max-width: 30vw;
+  animation: fadeIn 0.3s;
+  background-image: url('./assets/orchard.svg');
+  background-size: 100px 100px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.3em;
+  cursor: pointer;
+  color: #888;
+}
+
+.modal-content {
+  margin-top: 8px;
+  color: #213547;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.left-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 20px;
+  max-width: 20px;
+  height: 100vh;
+  z-index: 3000;
+  background: white;
+  display: flex;
+  background-image: url('./assets/orchard.svg');
+  background-size: 100px 100px;
+}
+
+.right-bar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 20px;
+  max-width: 20px;
+  height: 100vh;
+  z-index: 3000;
+  background: white;
+  display: flex;
+  background-image: url('./assets/orchard.svg');
+  background-size: 100px 100px;
+}
+
+.top-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  max-height: 20px;
+  height: 20px;
+  z-index: 3000;
+  background: white;
+  display: flex;
+  background-image: url('./assets/orchard.svg');
+  background-size: 100px 100px;
+}
+
+.bottom-bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 80px;
+  background: white;
+  z-index: 30000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./assets/orchard.svg');
+  background-size: 100px 100px;
+}
+
+.bottom-bar-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bottom-bar-logo {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+.bottom-bar-title {
+  color: #213547;
+  font-size: 1.1em;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -134,4 +304,19 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+@media only screen and (max-width: 600px) {
+  .bottom-bar-content {
+    width: 80%;
+    max-width: 80%;
+  }
+
+  .leaflet-popup {
+    margin: 0 !important;
+    width: 60vw !important;
+    max-width: 60vw !important;
+    /* transform: translate3d(210px, 350px, 0px) !important; */
+  }
+
 }
