@@ -1,16 +1,16 @@
 <script>
-  import { Map, TileLayer, GeoJSON } from "sveaflet";
+  import { Map, TileLayer, GeoJSON, ControlScale } from "sveaflet";
   import L from "leaflet";
   import { points } from "./points.js";
   import { onMount } from "svelte";
 
   function onEachFeature(feature, layer) {
-    let popupContent = `<p style='font-size:0.6em;margin:5px'>${feature.properties.type}</p><p style='margin:5px'><b>${feature.properties.name}</b></p><hr><p style='font-size:0.6em;margin:5px'>Notes : <br />${feature.properties.note}</a></p>`;
+    let popupContent = `<hr style='height:4px;background-color:${feature.properties.hr};color:${feature.properties.hr};border:none;'><p style='font-size:0.6em;margin:5px'>${feature.properties.type}</p><p style='margin:5px'><b>${feature.properties.name}</b></p><hr><p style='font-size:0.6em;margin:5px'>Notes : <br />${feature.properties.note}</a></p>`;
     if (feature.properties && feature.properties.popupContent) {
       popupContent += feature.properties.popupContent;
     }
 
-    layer.bindPopup(popupContent, { });
+    layer.bindPopup(popupContent, {});
     // layer.bindPopup(popupContent, { autoPan: false });
 
     layer.on("popupopen", () => {
@@ -74,13 +74,19 @@
       <div class="modal-content">
         <!-- <strong>Info</strong> -->
         <p>
-          La province du Nord-Kivu de la République démocratique du Congo et
-          l'île d'Idjwi sont connues dans le monde entier pour être une zone de
-          conflit armé. Le réseau <a href="https://dec-rdc.org/" target="_blank"
-            >Droits, Environnement et Citoyenneté - DEC</a
-          > a créé cette carte pour renverser cette rhétorique et montrer la beauté
+          La province du Nord et du Sud Kivu de la République démocratique du
+          Congo et l'île d'Idjwi sont connues dans le monde entier pour être une
+          zone de conflit armé. Le réseau <a
+            href="https://dec-rdc.org/"
+            target="_blank">Droits, Environnement et Citoyenneté - DEC</a
+          >
+          a créé cette carte pour renverser cette rhétorique et montrer la beauté
           et la richesse de la nature et des personnes qui vivent sur l'île d'Idjwi
-          et au bord du lac Kivu.
+          et au bord du lac Kivu. Contactez DEC par e-mail à l'adresse
+          <a href="mailto:dec.organisation21@gmail.com"
+            >dec.organisation21@gmail.com</a
+          > pour contribuer à la carte, donner pour supporter l'initiative ou obtenir
+          plus d'informations.
         </p>
       </div>
     </div>
@@ -119,23 +125,43 @@
           const iconHeight = feature.properties.iconHeight;
           const name = feature.properties.name;
 
-          const html = `
-    <div style="display: flex; flex-direction: column; align-items: center;">
-      <div class="marker-label">${name}</div>
-      ${svgHtml}
-    </div>
-  `;
+          const getHtml = (showLabel) => `
+            <div style="display: flex; flex-direction: column; align-items: center;">
+              ${showLabel ? `<div class="marker-label">${name}</div>` : ""}
+              ${svgHtml}
+            </div>
+          `;
 
-          const svgIcon = L.divIcon({
-            className: `custom-svg-icon marker-${feature.properties.ID}`,
-            html,
-            iconSize: [iconWidth, iconHeight],
-            iconAnchor: [iconWidth / 2, iconHeight / 2],
+          const getIcon = (zoom) => {
+            const baseZoom = 15; // reference zoom
+            const scale = Math.pow(1.2, zoom - baseZoom); // 20% bigger per zoom step
+            const newWidth = iconWidth * scale;
+            const newHeight = iconHeight * scale;
+            const showLabel = zoom > 14;
+
+            return L.divIcon({
+              className: `custom-svg-icon marker-${feature.properties.ID}`,
+              html: getHtml(showLabel),
+              iconSize: [newWidth, newHeight],
+              iconAnchor: [newWidth / 2, newHeight / 2],
+            });
+          };
+
+          const marker = L.marker(latlng, { icon: getIcon(15) });
+
+          marker.on("add", () => {
+            marker._map.on("zoomend", () => {
+              const zoom = marker._map.getZoom();
+              marker.setIcon(getIcon(zoom));
+            });
           });
-          return L.marker(latlng, { icon: svgIcon });
+
+          return marker;
         },
       }}
     />
+
+    <ControlScale options={{ maxWidth: 150 }} />
   </Map>
 </div>
 

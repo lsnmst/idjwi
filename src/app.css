@@ -40,9 +40,12 @@
 
 .marker-label {
   font-family: "Karla-Cedille", sans-serif;
-  font-size: 1em;
-  color: red;
-  background: rgba(255, 255, 255, 0.4);
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #213547;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #213547;
+  /* background: rgba(255, 255, 255, 0.5); */
   padding: 2px 8px;
   border-radius: 6px;
   margin-bottom: 2px;
@@ -103,6 +106,13 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.leaflet-control-scale.leaflet-control {
+  z-index: 9999 !important;
+  margin-bottom: 85px !important;
+  margin-left: 25px !important;
+  font-family: "Karla-Cedille", sans-serif;
+}
+
 .leaflet-control-zoom {
   display: block !important;
   opacity: 1 !important;
@@ -131,7 +141,7 @@ button:focus-visible {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   z-index: 10000;
   pointer-events: auto !important;
-  margin-bottom: 10px !important;
+  margin-bottom: 30px !important;
 }
 
 .leaflet-popup.leaflet-zoom-animated {
@@ -144,8 +154,8 @@ button:focus-visible {
   border-radius: 0 !important;
   height: 100%;
   background: #fff;
-  background-image: url('./assets/orchard.svg');
-  background-size: 100px 100px;
+  background-image: url('./assets/orchard.svg') !important;
+  background-size: 100px 100px !important;
   overflow-y: auto;
   box-shadow: none !important;
 }
