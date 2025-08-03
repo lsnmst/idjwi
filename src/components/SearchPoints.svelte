@@ -17,9 +17,11 @@
 
     $: results =
         query.length > 1 || focused // ✅ Show all if focused and query is empty
-            ? searchIndex.filter((p) =>
-                  p.name?.toLowerCase().includes(query.toLowerCase()),
-              )
+            ? searchIndex
+                  .filter((p) =>
+                      p.name?.toLowerCase().includes(query.toLowerCase()),
+                  )
+                  .sort((a, b) => a.name.localeCompare(b.name))
             : [];
 
     function selectPoint(point) {
@@ -46,7 +48,7 @@
                     class="result-item"
                     on:click={() => selectPoint(r)}
                 >
-                    <strong>{r.name}</strong> <small>({r.type})</small>
+                    <strong style="color: {r.properties.hr};">{r.name}</strong> <small style="color: {r.properties.hr};">({r.type})</small>
                 </button>
             {/each}
         </div>
@@ -76,7 +78,7 @@
     }
 
     .search-results {
-        max-height: 50%;
+        max-height: 70vh !important;
         overflow-y: auto;
         margin-top: 0.25rem;
         border-top: 1px solid #ccc;
@@ -102,5 +104,15 @@
     input {
         width: 100%;
         padding: 0.5rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .search-container {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .search-results {
+            max-height: 25vh !important;
+        }
     }
 </style>

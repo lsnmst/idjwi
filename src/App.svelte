@@ -169,7 +169,9 @@
 <div class="bottom-bar">
   <div class="bottom-bar-content">
     <img src="./logo-dec.png" alt="Logo" class="bottom-bar-logo" />
-    <span class="bottom-bar-title">Carte touristique de l'île d'Idjwi</span>
+    <span class="bottom-bar-title"
+      >carte du tourisme écoculturel de l'île d'Idjwi</span
+    >
   </div>
 </div>
 
@@ -183,6 +185,7 @@
       <button class="modal-close" on:click={() => (showModal = false)}>×</button
       >
       <div class="modal-content">
+        <h3>CARTOGRAPHIER LA MÉMOIRE DES ANCÊTRES POUR UN AVENIR DURABLE</h3>
         <p>
           La province du Nord et du Sud Kivu de la République démocratique du
           Congo et l'île d'Idjwi sont connues dans le monde entier pour être une
@@ -192,11 +195,11 @@
           >
           a créé cette carte pour renverser cette rhétorique et montrer la beauté
           et la richesse de la nature et des personnes qui vivent sur l'île d'Idjwi
-          et au bord du lac Kivu. Contactez DEC par e-mail à
+          et au bord du lac Kivu.<br /><br />Contactez DEC par e-mail à
           <a href="mailto:dec.organisation21@gmail.com"
             >dec.organisation21@gmail.com</a
-          > pour contribuer à la carte, donner pour supporter l'initiative ou obtenir
-          plus d'informations.
+          > pour contribuer à la carte, obtenir plus d'informations et donner pour
+          supporter l'initiative.
         </p>
       </div>
     </div>
@@ -234,7 +237,7 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   }
 
-  .minimapz{
+  .minimapz {
     z-index: 9999;
   }
 </style>
