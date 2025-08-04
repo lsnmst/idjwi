@@ -2,6 +2,7 @@
   import L from "leaflet";
   import "leaflet-minimap";
   import { points } from "./points.js";
+  import { landmarks } from "./landmarks.js";
   import SearchPoints from "./components/SearchPoints.svelte";
   import { onMount } from "svelte";
 
@@ -37,7 +38,7 @@
       <p style='font-size:0.6em;margin:5px'>${feature.properties.type}</p>
       <p style='margin:5px'><b>${feature.properties.name}</b></p>
       <hr>
-      <p style='font-size:0.6em;margin:5px'>${feature.properties.note}</p>`;
+      <p style='font-size:0.6em;margin:5px;padding-bottom:30px'>${feature.properties.note}</p>`;
 
     layer.bindPopup(popupContent);
 
@@ -86,6 +87,29 @@
     });
 
     geoJsonLayer.addTo(map);
+  }
+
+  function addLandmarkLayer() {
+    const landmarkLayer = L.geoJSON(landmarks, {
+      pointToLayer: (feature, latlng) => {
+        const zoom = map.getZoom();
+        const marker = L.marker(latlng, {
+          icon: createIcon(feature, zoom),
+        });
+
+        marker.on("add", () => {
+          map.on("zoomend", () => {
+            const currentZoom = map.getZoom();
+            marker.setIcon(createIcon(feature, currentZoom));
+          });
+        });
+
+        return marker;
+      },
+      onEachFeature: onEachFeature, // reuse the same function
+    });
+
+    landmarkLayer.addTo(map);
   }
 
   function handleSelectPoint(point) {
@@ -163,6 +187,7 @@
     L.control.scale({ maxWidth: 150 }).addTo(map);
 
     addGeoJson();
+    addLandmarkLayer();
   });
 </script>
 
