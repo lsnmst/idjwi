@@ -365,7 +365,7 @@ export const points = {
                 "iconWidth": 40,
                 "iconHeight": 40,
                 "hr": "#125d6aff",
-                "ID": 16,
+                "ID": 17,
                 "name": "Îlot Birhende",
                 "type": "Site naturel sacré",
                 "note": "Birhende est plus qu’un simple îlot : c’est un sanctuaire redouté, souvent évoqué à voix basse. Les anciens le désignent comme « l’île du silence », car selon la tradition orale, quiconque y prononçait des paroles impures ou profanes déclenchait la colère des esprits gardiens du lac. Autrefois, seuls les sages et les devins y accédaient, notamment lors des périodes de crise ou d’incertitude communautaire, pour consulter les forces invisibles et intercéder en faveur du peuple. Birhende est aussi associé à un vieux mythe de réconciliation entre deux clans rivaux. Pour les pêcheurs et les agriculteurs, cet îlot représente la mémoire vivante de la cohésion sociale, un rappel que la paix commence par l’écoute et le respect des interdits ancestraux.<br/><br/><a target='blank' href='https://dec-rdc.org/birhende-lilot-de-la-parole-interdite-emmanuel-ndimwiza-eclaire-les-secrets-sacres-du-lac-kivu/'>Birhende, l’îlot de la parole interdite : Emmanuel Ndimwiza éclaire les secrets sacrés du lac Kivu</a>"
@@ -374,90 +374,6 @@ export const points = {
                 "coordinates": [
                     29.020997726562673,
                     -2.0934496925423183
-                ],
-                "type": "Point"
-            },
-            "id": 16
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "svgHtml": "<svg x='0px' y='0px' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50;' fill='#125d6aff' xml:space='preserve'><path d='M24.8,50c-2.2,0-4.1-1.3-4.8-3.4l-0.8-2.3c-0.2-0.7-0.8-1.2-1.4-1.5c-0.7-0.3-1.4-0.3-2.1,0.1l-2.2,1c-2,0.9-4.2,0.5-5.8-1c-1.5-1.5-1.9-3.8-1-5.8l1-2.2C8,34.3,8,33.5,7.8,32.9c-0.3-0.7-0.8-1.2-1.5-1.4L4,30.6c-2.1-0.7-3.4-2.6-3.4-4.8c0-2.2,1.3-4.1,3.4-4.8l2.3-0.8C7,20,7.5,19.5,7.8,18.8C8,18.1,8,17.4,7.7,16.7l-1-2.2c-0.9-2-0.5-4.2,1-5.8c1.5-1.5,3.8-1.9,5.8-1l2.2,1c0.7,0.3,1.4,0.3,2.1,0.1c0.7-0.3,1.2-0.8,1.4-1.5L20,5c0.7-2.1,2.6-3.4,4.8-3.4c2.2,0,4.1,1.3,4.8,3.4l0.8,2.3c0.2,0.7,0.8,1.2,1.4,1.5c0.7,0.3,1.4,0.3,2.1-0.1l2.2-1c2-0.9,4.2-0.5,5.8,1c1.5,1.5,1.9,3.8,1,5.8l-1,2.2c-0.3,0.7-0.3,1.4-0.1,2.1c0.3,0.7,0.8,1.2,1.5,1.4l2.3,0.8c2.1,0.7,3.4,2.6,3.4,4.8c0,2.2-1.3,4.1-3.4,4.8l-2.3,0.8c-0.7,0.2-1.2,0.8-1.5,1.4c-0.3,0.7-0.3,1.4,0.1,2.1l1,2.2c0.9,2,0.5,4.2-1,5.8c-1.5,1.5-3.8,1.9-5.8,1l-2.2-1c-0.7-0.3-1.4-0.3-2.1-0.1c-0.7,0.3-1.2,0.8-1.4,1.5l-0.8,2.3C28.8,48.7,26.9,50,24.8,50z M16.7,40.1c0.7,0,1.3,0.1,1.9,0.4c1.3,0.5,2.4,1.6,2.8,3l0.8,2.3c0.4,1.3,1.5,1.7,2.4,1.7c0.9,0,2-0.4,2.4-1.7l0.8-2.3c0.5-1.4,1.5-2.4,2.8-3c1.3-0.5,2.8-0.5,4.1,0.1l2.2,1c1.2,0.6,2.3,0.1,2.9-0.5c0.6-0.6,1.1-1.7,0.5-2.9l-1-2.2c-0.6-1.3-0.7-2.8-0.1-4.1c0.5-1.3,1.6-2.4,3-2.8l2.3-0.8c1.3-0.4,1.7-1.5,1.7-2.4c0-0.9-0.4-2-1.7-2.4l-2.3-0.8c-1.4-0.5-2.4-1.5-3-2.8c-0.5-1.3-0.5-2.8,0.1-4.1l1-2.2c0.6-1.2,0.1-2.3-0.5-2.9c-0.6-0.6-1.7-1.1-2.9-0.5l-2.2,1c-1.3,0.6-2.8,0.7-4.1,0.1s-2.4-1.6-2.8-3l-0.8-2.3c-0.4-1.3-1.5-1.7-2.4-1.7c-0.9,0-2,0.4-2.4,1.7l-0.8,2.3c-0.5,1.4-1.5,2.4-2.8,3c-1.3,0.5-2.8,0.5-4.1-0.1l-2.2-1c-1.2-0.6-2.3-0.1-2.9,0.5c-0.6,0.6-1.1,1.7-0.5,2.9l1,2.2c0.6,1.3,0.7,2.8,0.1,4.1s-1.6,2.4-3,2.8l-2.3,0.8c-1.3,0.4-1.7,1.5-1.7,2.4c0,0.9,0.4,2,1.7,2.4L7.1,29c1.4,0.5,2.4,1.5,3,2.8s0.5,2.8-0.1,4.1l-1,2.2c-0.6,1.2-0.1,2.3,0.5,2.9c0.6,0.6,1.7,1.1,2.9,0.5l2.2-1C15.2,40.3,16,40.1,16.7,40.1z'/></svg>",
-                "iconWidth": 40,
-                "iconHeight": 40,
-                "hr": "#125d6aff",
-                "ID": 16,
-                "name": "Îlot Nyamizi",
-                "type": "Site naturel sacré",
-                "note": "L’îlot Nyamizi est chargé d’un récit de séparation et de renaissance, un ancien rite de purification des pêcheurs avant l’entrée dans une saison de pêche intensive. On y déposait symboliquement les fautes, les conflits et les malédictions. Ce rocher sacré représentait une frontière invisible entre les mondes des vivants et des esprits du lac. Les jeunes initiés y allaient, guidés par des aînés, pour recevoir des enseignements sur l’humilité, le courage et le respect des écosystèmes.<br/><br/><a target='blank' href='https://dec-rdc.org/muhembe-et-nyamizi-gardiens-des-memoires-ancestrales-emmanuel-ndimwiza-devoile-les-recits-oublies-du-lac-kivu-2/'>Muhembe et Nyamizi, gardiens des mémoires ancestrales : Emmanuel Ndimwiza dévoile les récits oubliés du lac Kivu</a>"
-            },
-            "geometry": {
-                "coordinates": [
-                    28.98337636990019,
-                    -2.2380204711909277
-                ],
-                "type": "Point"
-            },
-            "id": 16
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "svgHtml": "<svg x='0px' y='0px' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50;' fill='#125d6aff' xml:space='preserve'><path d='M24.8,50c-2.2,0-4.1-1.3-4.8-3.4l-0.8-2.3c-0.2-0.7-0.8-1.2-1.4-1.5c-0.7-0.3-1.4-0.3-2.1,0.1l-2.2,1c-2,0.9-4.2,0.5-5.8-1c-1.5-1.5-1.9-3.8-1-5.8l1-2.2C8,34.3,8,33.5,7.8,32.9c-0.3-0.7-0.8-1.2-1.5-1.4L4,30.6c-2.1-0.7-3.4-2.6-3.4-4.8c0-2.2,1.3-4.1,3.4-4.8l2.3-0.8C7,20,7.5,19.5,7.8,18.8C8,18.1,8,17.4,7.7,16.7l-1-2.2c-0.9-2-0.5-4.2,1-5.8c1.5-1.5,3.8-1.9,5.8-1l2.2,1c0.7,0.3,1.4,0.3,2.1,0.1c0.7-0.3,1.2-0.8,1.4-1.5L20,5c0.7-2.1,2.6-3.4,4.8-3.4c2.2,0,4.1,1.3,4.8,3.4l0.8,2.3c0.2,0.7,0.8,1.2,1.4,1.5c0.7,0.3,1.4,0.3,2.1-0.1l2.2-1c2-0.9,4.2-0.5,5.8,1c1.5,1.5,1.9,3.8,1,5.8l-1,2.2c-0.3,0.7-0.3,1.4-0.1,2.1c0.3,0.7,0.8,1.2,1.5,1.4l2.3,0.8c2.1,0.7,3.4,2.6,3.4,4.8c0,2.2-1.3,4.1-3.4,4.8l-2.3,0.8c-0.7,0.2-1.2,0.8-1.5,1.4c-0.3,0.7-0.3,1.4,0.1,2.1l1,2.2c0.9,2,0.5,4.2-1,5.8c-1.5,1.5-3.8,1.9-5.8,1l-2.2-1c-0.7-0.3-1.4-0.3-2.1-0.1c-0.7,0.3-1.2,0.8-1.4,1.5l-0.8,2.3C28.8,48.7,26.9,50,24.8,50z M16.7,40.1c0.7,0,1.3,0.1,1.9,0.4c1.3,0.5,2.4,1.6,2.8,3l0.8,2.3c0.4,1.3,1.5,1.7,2.4,1.7c0.9,0,2-0.4,2.4-1.7l0.8-2.3c0.5-1.4,1.5-2.4,2.8-3c1.3-0.5,2.8-0.5,4.1,0.1l2.2,1c1.2,0.6,2.3,0.1,2.9-0.5c0.6-0.6,1.1-1.7,0.5-2.9l-1-2.2c-0.6-1.3-0.7-2.8-0.1-4.1c0.5-1.3,1.6-2.4,3-2.8l2.3-0.8c1.3-0.4,1.7-1.5,1.7-2.4c0-0.9-0.4-2-1.7-2.4l-2.3-0.8c-1.4-0.5-2.4-1.5-3-2.8c-0.5-1.3-0.5-2.8,0.1-4.1l1-2.2c0.6-1.2,0.1-2.3-0.5-2.9c-0.6-0.6-1.7-1.1-2.9-0.5l-2.2,1c-1.3,0.6-2.8,0.7-4.1,0.1s-2.4-1.6-2.8-3l-0.8-2.3c-0.4-1.3-1.5-1.7-2.4-1.7c-0.9,0-2,0.4-2.4,1.7l-0.8,2.3c-0.5,1.4-1.5,2.4-2.8,3c-1.3,0.5-2.8,0.5-4.1-0.1l-2.2-1c-1.2-0.6-2.3-0.1-2.9,0.5c-0.6,0.6-1.1,1.7-0.5,2.9l1,2.2c0.6,1.3,0.7,2.8,0.1,4.1s-1.6,2.4-3,2.8l-2.3,0.8c-1.3,0.4-1.7,1.5-1.7,2.4c0,0.9,0.4,2,1.7,2.4L7.1,29c1.4,0.5,2.4,1.5,3,2.8s0.5,2.8-0.1,4.1l-1,2.2c-0.6,1.2-0.1,2.3,0.5,2.9c0.6,0.6,1.7,1.1,2.9,0.5l2.2-1C15.2,40.3,16,40.1,16.7,40.1z'/></svg>",
-                "iconWidth": 40,
-                "iconHeight": 40,
-                "hr": "#125d6aff",
-                "ID": 17,
-                "name": "Îlot Kinyabalanga",
-                "type": "Site naturel sacré",
-                "note": "Selon les récits recueillis Kinyabalanga aurait été le refuge d’un grand devin fuyant les conflits de clans. Ce dernier y aurait reçu des révélations sur la paix entre les peuples insulaires et le respect des forces invisibles du lac. Depuis, l’îlot est resté vide d’habitants, mais empli de puissance symbolique. Les pêcheurs, avant chaque saison, offraient du poisson ou des feuilles sacrées sur leurs pirogues en passant à proximité, en signe d’hommage et de demande de protection.<br/><br/><a target='blank' href='https://dec-rdc.org/kinyabalanga-lile-des-esprits-veilleurs-emmanuel-ndimwiza-ressuscite-les-recits-sacres-du-lac-kivu/'>Kinyabalanga, l’île des esprits veilleurs : Emmanuel Ndimwiza ressuscite les récits sacrés du lac Kivu</a>"
-            },
-            "geometry": {
-                "coordinates": [
-                    28.986985469385495,
-                    -2.313114264638377
-                ],
-                "type": "Point"
-            },
-            "id": 17
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "svgHtml": "<svg x='0px' y='0px' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50;' fill='#125d6aff' xml:space='preserve'><path d='M24.8,50c-2.2,0-4.1-1.3-4.8-3.4l-0.8-2.3c-0.2-0.7-0.8-1.2-1.4-1.5c-0.7-0.3-1.4-0.3-2.1,0.1l-2.2,1c-2,0.9-4.2,0.5-5.8-1c-1.5-1.5-1.9-3.8-1-5.8l1-2.2C8,34.3,8,33.5,7.8,32.9c-0.3-0.7-0.8-1.2-1.5-1.4L4,30.6c-2.1-0.7-3.4-2.6-3.4-4.8c0-2.2,1.3-4.1,3.4-4.8l2.3-0.8C7,20,7.5,19.5,7.8,18.8C8,18.1,8,17.4,7.7,16.7l-1-2.2c-0.9-2-0.5-4.2,1-5.8c1.5-1.5,3.8-1.9,5.8-1l2.2,1c0.7,0.3,1.4,0.3,2.1,0.1c0.7-0.3,1.2-0.8,1.4-1.5L20,5c0.7-2.1,2.6-3.4,4.8-3.4c2.2,0,4.1,1.3,4.8,3.4l0.8,2.3c0.2,0.7,0.8,1.2,1.4,1.5c0.7,0.3,1.4,0.3,2.1-0.1l2.2-1c2-0.9,4.2-0.5,5.8,1c1.5,1.5,1.9,3.8,1,5.8l-1,2.2c-0.3,0.7-0.3,1.4-0.1,2.1c0.3,0.7,0.8,1.2,1.5,1.4l2.3,0.8c2.1,0.7,3.4,2.6,3.4,4.8c0,2.2-1.3,4.1-3.4,4.8l-2.3,0.8c-0.7,0.2-1.2,0.8-1.5,1.4c-0.3,0.7-0.3,1.4,0.1,2.1l1,2.2c0.9,2,0.5,4.2-1,5.8c-1.5,1.5-3.8,1.9-5.8,1l-2.2-1c-0.7-0.3-1.4-0.3-2.1-0.1c-0.7,0.3-1.2,0.8-1.4,1.5l-0.8,2.3C28.8,48.7,26.9,50,24.8,50z M16.7,40.1c0.7,0,1.3,0.1,1.9,0.4c1.3,0.5,2.4,1.6,2.8,3l0.8,2.3c0.4,1.3,1.5,1.7,2.4,1.7c0.9,0,2-0.4,2.4-1.7l0.8-2.3c0.5-1.4,1.5-2.4,2.8-3c1.3-0.5,2.8-0.5,4.1,0.1l2.2,1c1.2,0.6,2.3,0.1,2.9-0.5c0.6-0.6,1.1-1.7,0.5-2.9l-1-2.2c-0.6-1.3-0.7-2.8-0.1-4.1c0.5-1.3,1.6-2.4,3-2.8l2.3-0.8c1.3-0.4,1.7-1.5,1.7-2.4c0-0.9-0.4-2-1.7-2.4l-2.3-0.8c-1.4-0.5-2.4-1.5-3-2.8c-0.5-1.3-0.5-2.8,0.1-4.1l1-2.2c0.6-1.2,0.1-2.3-0.5-2.9c-0.6-0.6-1.7-1.1-2.9-0.5l-2.2,1c-1.3,0.6-2.8,0.7-4.1,0.1s-2.4-1.6-2.8-3l-0.8-2.3c-0.4-1.3-1.5-1.7-2.4-1.7c-0.9,0-2,0.4-2.4,1.7l-0.8,2.3c-0.5,1.4-1.5,2.4-2.8,3c-1.3,0.5-2.8,0.5-4.1-0.1l-2.2-1c-1.2-0.6-2.3-0.1-2.9,0.5c-0.6,0.6-1.1,1.7-0.5,2.9l1,2.2c0.6,1.3,0.7,2.8,0.1,4.1s-1.6,2.4-3,2.8l-2.3,0.8c-1.3,0.4-1.7,1.5-1.7,2.4c0,0.9,0.4,2,1.7,2.4L7.1,29c1.4,0.5,2.4,1.5,3,2.8s0.5,2.8-0.1,4.1l-1,2.2c-0.6,1.2-0.1,2.3,0.5,2.9c0.6,0.6,1.7,1.1,2.9,0.5l2.2-1C15.2,40.3,16,40.1,16.7,40.1z'/></svg>",
-                "iconWidth": 40,
-                "iconHeight": 40,
-                "hr": "#125d6aff",
-                "ID": 17,
-                "name": "Îlot Okushako Z’abanyere",
-                "type": "Site naturel sacré",
-                "note": "Dans l’imaginaire collectif des peuples riverains du lac Kivu, l’îlot Okushako Z’abanyere est entouré de mystère et de respect. Selon les anciens d’Idjwi, cet îlot était jadis un lieu de repli des Banyere, un clan réputé pour ses pouvoirs spirituels et son lien avec les esprits du lac. On y accédait rarement, et seulement après des rituels stricts, car il était considéré comme un sanctuaire vivant. Les pêcheurs évitaient de s’en approcher sans permission des sages, de peur de déclencher la colère des forces invisibles qui y résidaient. Des cérémonies de réconciliation, des invocations pour calmer les eaux ou guérir les malades s’y déroulaient en secret. Cet îlot était aussi perçu comme une sentinelle du lac, capable de provoquer des tempêtes si les lois sacrées étaient violées. Ce rôle protecteur l’a inscrit profondément dans la conscience collective des communautés insulaires comme un lieu d’équilibre entre le visible et l’invisible.<br/><br/><a target='blank' href='https://dec-rdc.org/okushako-zabanyere-lilot-des-gardiens-sacres-emmanuel-ndimwiza-devoile-les-recits-enfouis-du-lac-kivu/'>Okushako Z’abanyere, l’îlot des gardiens sacrés : Emmanuel Ndimwiza dévoile les récits enfouis du lac Kivu</a>"
-            },
-            "geometry": {
-                "coordinates": [
-                    29.01633084801301,
-                    - 2.101783048180555
-                ],
-                "type": "Point"
-            },
-            "id": 17
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "svgHtml": "<svg x='0px' y='0px' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50;' fill='#125d6aff' xml:space='preserve'><path d='M24.8,50c-2.2,0-4.1-1.3-4.8-3.4l-0.8-2.3c-0.2-0.7-0.8-1.2-1.4-1.5c-0.7-0.3-1.4-0.3-2.1,0.1l-2.2,1c-2,0.9-4.2,0.5-5.8-1c-1.5-1.5-1.9-3.8-1-5.8l1-2.2C8,34.3,8,33.5,7.8,32.9c-0.3-0.7-0.8-1.2-1.5-1.4L4,30.6c-2.1-0.7-3.4-2.6-3.4-4.8c0-2.2,1.3-4.1,3.4-4.8l2.3-0.8C7,20,7.5,19.5,7.8,18.8C8,18.1,8,17.4,7.7,16.7l-1-2.2c-0.9-2-0.5-4.2,1-5.8c1.5-1.5,3.8-1.9,5.8-1l2.2,1c0.7,0.3,1.4,0.3,2.1,0.1c0.7-0.3,1.2-0.8,1.4-1.5L20,5c0.7-2.1,2.6-3.4,4.8-3.4c2.2,0,4.1,1.3,4.8,3.4l0.8,2.3c0.2,0.7,0.8,1.2,1.4,1.5c0.7,0.3,1.4,0.3,2.1-0.1l2.2-1c2-0.9,4.2-0.5,5.8,1c1.5,1.5,1.9,3.8,1,5.8l-1,2.2c-0.3,0.7-0.3,1.4-0.1,2.1c0.3,0.7,0.8,1.2,1.5,1.4l2.3,0.8c2.1,0.7,3.4,2.6,3.4,4.8c0,2.2-1.3,4.1-3.4,4.8l-2.3,0.8c-0.7,0.2-1.2,0.8-1.5,1.4c-0.3,0.7-0.3,1.4,0.1,2.1l1,2.2c0.9,2,0.5,4.2-1,5.8c-1.5,1.5-3.8,1.9-5.8,1l-2.2-1c-0.7-0.3-1.4-0.3-2.1-0.1c-0.7,0.3-1.2,0.8-1.4,1.5l-0.8,2.3C28.8,48.7,26.9,50,24.8,50z M16.7,40.1c0.7,0,1.3,0.1,1.9,0.4c1.3,0.5,2.4,1.6,2.8,3l0.8,2.3c0.4,1.3,1.5,1.7,2.4,1.7c0.9,0,2-0.4,2.4-1.7l0.8-2.3c0.5-1.4,1.5-2.4,2.8-3c1.3-0.5,2.8-0.5,4.1,0.1l2.2,1c1.2,0.6,2.3,0.1,2.9-0.5c0.6-0.6,1.1-1.7,0.5-2.9l-1-2.2c-0.6-1.3-0.7-2.8-0.1-4.1c0.5-1.3,1.6-2.4,3-2.8l2.3-0.8c1.3-0.4,1.7-1.5,1.7-2.4c0-0.9-0.4-2-1.7-2.4l-2.3-0.8c-1.4-0.5-2.4-1.5-3-2.8c-0.5-1.3-0.5-2.8,0.1-4.1l1-2.2c0.6-1.2,0.1-2.3-0.5-2.9c-0.6-0.6-1.7-1.1-2.9-0.5l-2.2,1c-1.3,0.6-2.8,0.7-4.1,0.1s-2.4-1.6-2.8-3l-0.8-2.3c-0.4-1.3-1.5-1.7-2.4-1.7c-0.9,0-2,0.4-2.4,1.7l-0.8,2.3c-0.5,1.4-1.5,2.4-2.8,3c-1.3,0.5-2.8,0.5-4.1-0.1l-2.2-1c-1.2-0.6-2.3-0.1-2.9,0.5c-0.6,0.6-1.1,1.7-0.5,2.9l1,2.2c0.6,1.3,0.7,2.8,0.1,4.1s-1.6,2.4-3,2.8l-2.3,0.8c-1.3,0.4-1.7,1.5-1.7,2.4c0,0.9,0.4,2,1.7,2.4L7.1,29c1.4,0.5,2.4,1.5,3,2.8s0.5,2.8-0.1,4.1l-1,2.2c-0.6,1.2-0.1,2.3,0.5,2.9c0.6,0.6,1.7,1.1,2.9,0.5l2.2-1C15.2,40.3,16,40.1,16.7,40.1z'/></svg>",
-                "iconWidth": 40,
-                "iconHeight": 40,
-                "hr": "#125d6aff",
-                "ID": 17,
-                "name": "Îlot Kime",
-                "type": "Site naturel sacré",
-                "note": "Situé en territoire de Kalehe, l’îlot Kime est enveloppé d’un mystère que les générations se transmettent avec respect et crainte. Selon les anciens, Kime fut autrefois un lieu d’asile pour les chefs spirituels en période de guerre. On y venait chercher la paix, l’inspiration, et la bénédiction des ancêtres. Son isolement naturel en faisait un sanctuaire sacré, où seuls les initiés pouvaient s’aventurer. Le silence qui y règne encore aujourd’hui est perçu comme une voix des esprits du lac, rappelant aux vivants que cet îlot n’est pas un simple bout de terre, mais un cœur battant de mémoire. Dans l’imaginaire collectif des pêcheurs et des éleveurs de Kalehe, Kime est aussi le siège des esprits protecteurs du lac. Des mythes parlent même d’apparitions lumineuses à la tombée de la nuit, signes que les ancêtres y veillent toujours. Cette spiritualité profonde relie l’écologie à la tradition, fondant un pacte invisible entre nature et humanité.<br/><br/><a target='blank' href='https://dec-rdc.org/kime-lilot-des-secrets-anciens-emmanuel-ndimwiza-devoile-les-recits-sacres-du-lac-kivu/'>Kime, l’îlot des secrets anciens : Emmanuel Ndimwiza dévoile les récits sacrés du lac Kivu</a>"
-            },
-            "geometry": {
-                "coordinates": [
-                    28.95583742539003,
-                    -2.2671300083049872
                 ],
                 "type": "Point"
             },
@@ -471,6 +387,90 @@ export const points = {
                 "iconHeight": 40,
                 "hr": "#125d6aff",
                 "ID": 18,
+                "name": "Îlot Nyamizi",
+                "type": "Site naturel sacré",
+                "note": "L’îlot Nyamizi est chargé d’un récit de séparation et de renaissance, un ancien rite de purification des pêcheurs avant l’entrée dans une saison de pêche intensive. On y déposait symboliquement les fautes, les conflits et les malédictions. Ce rocher sacré représentait une frontière invisible entre les mondes des vivants et des esprits du lac. Les jeunes initiés y allaient, guidés par des aînés, pour recevoir des enseignements sur l’humilité, le courage et le respect des écosystèmes.<br/><br/><a target='blank' href='https://dec-rdc.org/muhembe-et-nyamizi-gardiens-des-memoires-ancestrales-emmanuel-ndimwiza-devoile-les-recits-oublies-du-lac-kivu-2/'>Muhembe et Nyamizi, gardiens des mémoires ancestrales : Emmanuel Ndimwiza dévoile les récits oubliés du lac Kivu</a>"
+            },
+            "geometry": {
+                "coordinates": [
+                    28.98337636990019,
+                    -2.2380204711909277
+                ],
+                "type": "Point"
+            },
+            "id": 18
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "svgHtml": "<svg x='0px' y='0px' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50;' fill='#125d6aff' xml:space='preserve'><path d='M24.8,50c-2.2,0-4.1-1.3-4.8-3.4l-0.8-2.3c-0.2-0.7-0.8-1.2-1.4-1.5c-0.7-0.3-1.4-0.3-2.1,0.1l-2.2,1c-2,0.9-4.2,0.5-5.8-1c-1.5-1.5-1.9-3.8-1-5.8l1-2.2C8,34.3,8,33.5,7.8,32.9c-0.3-0.7-0.8-1.2-1.5-1.4L4,30.6c-2.1-0.7-3.4-2.6-3.4-4.8c0-2.2,1.3-4.1,3.4-4.8l2.3-0.8C7,20,7.5,19.5,7.8,18.8C8,18.1,8,17.4,7.7,16.7l-1-2.2c-0.9-2-0.5-4.2,1-5.8c1.5-1.5,3.8-1.9,5.8-1l2.2,1c0.7,0.3,1.4,0.3,2.1,0.1c0.7-0.3,1.2-0.8,1.4-1.5L20,5c0.7-2.1,2.6-3.4,4.8-3.4c2.2,0,4.1,1.3,4.8,3.4l0.8,2.3c0.2,0.7,0.8,1.2,1.4,1.5c0.7,0.3,1.4,0.3,2.1-0.1l2.2-1c2-0.9,4.2-0.5,5.8,1c1.5,1.5,1.9,3.8,1,5.8l-1,2.2c-0.3,0.7-0.3,1.4-0.1,2.1c0.3,0.7,0.8,1.2,1.5,1.4l2.3,0.8c2.1,0.7,3.4,2.6,3.4,4.8c0,2.2-1.3,4.1-3.4,4.8l-2.3,0.8c-0.7,0.2-1.2,0.8-1.5,1.4c-0.3,0.7-0.3,1.4,0.1,2.1l1,2.2c0.9,2,0.5,4.2-1,5.8c-1.5,1.5-3.8,1.9-5.8,1l-2.2-1c-0.7-0.3-1.4-0.3-2.1-0.1c-0.7,0.3-1.2,0.8-1.4,1.5l-0.8,2.3C28.8,48.7,26.9,50,24.8,50z M16.7,40.1c0.7,0,1.3,0.1,1.9,0.4c1.3,0.5,2.4,1.6,2.8,3l0.8,2.3c0.4,1.3,1.5,1.7,2.4,1.7c0.9,0,2-0.4,2.4-1.7l0.8-2.3c0.5-1.4,1.5-2.4,2.8-3c1.3-0.5,2.8-0.5,4.1,0.1l2.2,1c1.2,0.6,2.3,0.1,2.9-0.5c0.6-0.6,1.1-1.7,0.5-2.9l-1-2.2c-0.6-1.3-0.7-2.8-0.1-4.1c0.5-1.3,1.6-2.4,3-2.8l2.3-0.8c1.3-0.4,1.7-1.5,1.7-2.4c0-0.9-0.4-2-1.7-2.4l-2.3-0.8c-1.4-0.5-2.4-1.5-3-2.8c-0.5-1.3-0.5-2.8,0.1-4.1l1-2.2c0.6-1.2,0.1-2.3-0.5-2.9c-0.6-0.6-1.7-1.1-2.9-0.5l-2.2,1c-1.3,0.6-2.8,0.7-4.1,0.1s-2.4-1.6-2.8-3l-0.8-2.3c-0.4-1.3-1.5-1.7-2.4-1.7c-0.9,0-2,0.4-2.4,1.7l-0.8,2.3c-0.5,1.4-1.5,2.4-2.8,3c-1.3,0.5-2.8,0.5-4.1-0.1l-2.2-1c-1.2-0.6-2.3-0.1-2.9,0.5c-0.6,0.6-1.1,1.7-0.5,2.9l1,2.2c0.6,1.3,0.7,2.8,0.1,4.1s-1.6,2.4-3,2.8l-2.3,0.8c-1.3,0.4-1.7,1.5-1.7,2.4c0,0.9,0.4,2,1.7,2.4L7.1,29c1.4,0.5,2.4,1.5,3,2.8s0.5,2.8-0.1,4.1l-1,2.2c-0.6,1.2-0.1,2.3,0.5,2.9c0.6,0.6,1.7,1.1,2.9,0.5l2.2-1C15.2,40.3,16,40.1,16.7,40.1z'/></svg>",
+                "iconWidth": 40,
+                "iconHeight": 40,
+                "hr": "#125d6aff",
+                "ID": 19,
+                "name": "Îlot Kinyabalanga",
+                "type": "Site naturel sacré",
+                "note": "Selon les récits recueillis Kinyabalanga aurait été le refuge d’un grand devin fuyant les conflits de clans. Ce dernier y aurait reçu des révélations sur la paix entre les peuples insulaires et le respect des forces invisibles du lac. Depuis, l’îlot est resté vide d’habitants, mais empli de puissance symbolique. Les pêcheurs, avant chaque saison, offraient du poisson ou des feuilles sacrées sur leurs pirogues en passant à proximité, en signe d’hommage et de demande de protection.<br/><br/><a target='blank' href='https://dec-rdc.org/kinyabalanga-lile-des-esprits-veilleurs-emmanuel-ndimwiza-ressuscite-les-recits-sacres-du-lac-kivu/'>Kinyabalanga, l’île des esprits veilleurs : Emmanuel Ndimwiza ressuscite les récits sacrés du lac Kivu</a>"
+            },
+            "geometry": {
+                "coordinates": [
+                    28.986985469385495,
+                    -2.313114264638377
+                ],
+                "type": "Point"
+            },
+            "id": 19
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "svgHtml": "<svg x='0px' y='0px' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50;' fill='#125d6aff' xml:space='preserve'><path d='M24.8,50c-2.2,0-4.1-1.3-4.8-3.4l-0.8-2.3c-0.2-0.7-0.8-1.2-1.4-1.5c-0.7-0.3-1.4-0.3-2.1,0.1l-2.2,1c-2,0.9-4.2,0.5-5.8-1c-1.5-1.5-1.9-3.8-1-5.8l1-2.2C8,34.3,8,33.5,7.8,32.9c-0.3-0.7-0.8-1.2-1.5-1.4L4,30.6c-2.1-0.7-3.4-2.6-3.4-4.8c0-2.2,1.3-4.1,3.4-4.8l2.3-0.8C7,20,7.5,19.5,7.8,18.8C8,18.1,8,17.4,7.7,16.7l-1-2.2c-0.9-2-0.5-4.2,1-5.8c1.5-1.5,3.8-1.9,5.8-1l2.2,1c0.7,0.3,1.4,0.3,2.1,0.1c0.7-0.3,1.2-0.8,1.4-1.5L20,5c0.7-2.1,2.6-3.4,4.8-3.4c2.2,0,4.1,1.3,4.8,3.4l0.8,2.3c0.2,0.7,0.8,1.2,1.4,1.5c0.7,0.3,1.4,0.3,2.1-0.1l2.2-1c2-0.9,4.2-0.5,5.8,1c1.5,1.5,1.9,3.8,1,5.8l-1,2.2c-0.3,0.7-0.3,1.4-0.1,2.1c0.3,0.7,0.8,1.2,1.5,1.4l2.3,0.8c2.1,0.7,3.4,2.6,3.4,4.8c0,2.2-1.3,4.1-3.4,4.8l-2.3,0.8c-0.7,0.2-1.2,0.8-1.5,1.4c-0.3,0.7-0.3,1.4,0.1,2.1l1,2.2c0.9,2,0.5,4.2-1,5.8c-1.5,1.5-3.8,1.9-5.8,1l-2.2-1c-0.7-0.3-1.4-0.3-2.1-0.1c-0.7,0.3-1.2,0.8-1.4,1.5l-0.8,2.3C28.8,48.7,26.9,50,24.8,50z M16.7,40.1c0.7,0,1.3,0.1,1.9,0.4c1.3,0.5,2.4,1.6,2.8,3l0.8,2.3c0.4,1.3,1.5,1.7,2.4,1.7c0.9,0,2-0.4,2.4-1.7l0.8-2.3c0.5-1.4,1.5-2.4,2.8-3c1.3-0.5,2.8-0.5,4.1,0.1l2.2,1c1.2,0.6,2.3,0.1,2.9-0.5c0.6-0.6,1.1-1.7,0.5-2.9l-1-2.2c-0.6-1.3-0.7-2.8-0.1-4.1c0.5-1.3,1.6-2.4,3-2.8l2.3-0.8c1.3-0.4,1.7-1.5,1.7-2.4c0-0.9-0.4-2-1.7-2.4l-2.3-0.8c-1.4-0.5-2.4-1.5-3-2.8c-0.5-1.3-0.5-2.8,0.1-4.1l1-2.2c0.6-1.2,0.1-2.3-0.5-2.9c-0.6-0.6-1.7-1.1-2.9-0.5l-2.2,1c-1.3,0.6-2.8,0.7-4.1,0.1s-2.4-1.6-2.8-3l-0.8-2.3c-0.4-1.3-1.5-1.7-2.4-1.7c-0.9,0-2,0.4-2.4,1.7l-0.8,2.3c-0.5,1.4-1.5,2.4-2.8,3c-1.3,0.5-2.8,0.5-4.1-0.1l-2.2-1c-1.2-0.6-2.3-0.1-2.9,0.5c-0.6,0.6-1.1,1.7-0.5,2.9l1,2.2c0.6,1.3,0.7,2.8,0.1,4.1s-1.6,2.4-3,2.8l-2.3,0.8c-1.3,0.4-1.7,1.5-1.7,2.4c0,0.9,0.4,2,1.7,2.4L7.1,29c1.4,0.5,2.4,1.5,3,2.8s0.5,2.8-0.1,4.1l-1,2.2c-0.6,1.2-0.1,2.3,0.5,2.9c0.6,0.6,1.7,1.1,2.9,0.5l2.2-1C15.2,40.3,16,40.1,16.7,40.1z'/></svg>",
+                "iconWidth": 40,
+                "iconHeight": 40,
+                "hr": "#125d6aff",
+                "ID": 20,
+                "name": "Îlot Okushako Z’abanyere",
+                "type": "Site naturel sacré",
+                "note": "Dans l’imaginaire collectif des peuples riverains du lac Kivu, l’îlot Okushako Z’abanyere est entouré de mystère et de respect. Selon les anciens d’Idjwi, cet îlot était jadis un lieu de repli des Banyere, un clan réputé pour ses pouvoirs spirituels et son lien avec les esprits du lac. On y accédait rarement, et seulement après des rituels stricts, car il était considéré comme un sanctuaire vivant. Les pêcheurs évitaient de s’en approcher sans permission des sages, de peur de déclencher la colère des forces invisibles qui y résidaient. Des cérémonies de réconciliation, des invocations pour calmer les eaux ou guérir les malades s’y déroulaient en secret. Cet îlot était aussi perçu comme une sentinelle du lac, capable de provoquer des tempêtes si les lois sacrées étaient violées. Ce rôle protecteur l’a inscrit profondément dans la conscience collective des communautés insulaires comme un lieu d’équilibre entre le visible et l’invisible.<br/><br/><a target='blank' href='https://dec-rdc.org/okushako-zabanyere-lilot-des-gardiens-sacres-emmanuel-ndimwiza-devoile-les-recits-enfouis-du-lac-kivu/'>Okushako Z’abanyere, l’îlot des gardiens sacrés : Emmanuel Ndimwiza dévoile les récits enfouis du lac Kivu</a>"
+            },
+            "geometry": {
+                "coordinates": [
+                    29.01633084801301,
+                    - 2.101783048180555
+                ],
+                "type": "Point"
+            },
+            "id": 20
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "svgHtml": "<svg x='0px' y='0px' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50;' fill='#125d6aff' xml:space='preserve'><path d='M24.8,50c-2.2,0-4.1-1.3-4.8-3.4l-0.8-2.3c-0.2-0.7-0.8-1.2-1.4-1.5c-0.7-0.3-1.4-0.3-2.1,0.1l-2.2,1c-2,0.9-4.2,0.5-5.8-1c-1.5-1.5-1.9-3.8-1-5.8l1-2.2C8,34.3,8,33.5,7.8,32.9c-0.3-0.7-0.8-1.2-1.5-1.4L4,30.6c-2.1-0.7-3.4-2.6-3.4-4.8c0-2.2,1.3-4.1,3.4-4.8l2.3-0.8C7,20,7.5,19.5,7.8,18.8C8,18.1,8,17.4,7.7,16.7l-1-2.2c-0.9-2-0.5-4.2,1-5.8c1.5-1.5,3.8-1.9,5.8-1l2.2,1c0.7,0.3,1.4,0.3,2.1,0.1c0.7-0.3,1.2-0.8,1.4-1.5L20,5c0.7-2.1,2.6-3.4,4.8-3.4c2.2,0,4.1,1.3,4.8,3.4l0.8,2.3c0.2,0.7,0.8,1.2,1.4,1.5c0.7,0.3,1.4,0.3,2.1-0.1l2.2-1c2-0.9,4.2-0.5,5.8,1c1.5,1.5,1.9,3.8,1,5.8l-1,2.2c-0.3,0.7-0.3,1.4-0.1,2.1c0.3,0.7,0.8,1.2,1.5,1.4l2.3,0.8c2.1,0.7,3.4,2.6,3.4,4.8c0,2.2-1.3,4.1-3.4,4.8l-2.3,0.8c-0.7,0.2-1.2,0.8-1.5,1.4c-0.3,0.7-0.3,1.4,0.1,2.1l1,2.2c0.9,2,0.5,4.2-1,5.8c-1.5,1.5-3.8,1.9-5.8,1l-2.2-1c-0.7-0.3-1.4-0.3-2.1-0.1c-0.7,0.3-1.2,0.8-1.4,1.5l-0.8,2.3C28.8,48.7,26.9,50,24.8,50z M16.7,40.1c0.7,0,1.3,0.1,1.9,0.4c1.3,0.5,2.4,1.6,2.8,3l0.8,2.3c0.4,1.3,1.5,1.7,2.4,1.7c0.9,0,2-0.4,2.4-1.7l0.8-2.3c0.5-1.4,1.5-2.4,2.8-3c1.3-0.5,2.8-0.5,4.1,0.1l2.2,1c1.2,0.6,2.3,0.1,2.9-0.5c0.6-0.6,1.1-1.7,0.5-2.9l-1-2.2c-0.6-1.3-0.7-2.8-0.1-4.1c0.5-1.3,1.6-2.4,3-2.8l2.3-0.8c1.3-0.4,1.7-1.5,1.7-2.4c0-0.9-0.4-2-1.7-2.4l-2.3-0.8c-1.4-0.5-2.4-1.5-3-2.8c-0.5-1.3-0.5-2.8,0.1-4.1l1-2.2c0.6-1.2,0.1-2.3-0.5-2.9c-0.6-0.6-1.7-1.1-2.9-0.5l-2.2,1c-1.3,0.6-2.8,0.7-4.1,0.1s-2.4-1.6-2.8-3l-0.8-2.3c-0.4-1.3-1.5-1.7-2.4-1.7c-0.9,0-2,0.4-2.4,1.7l-0.8,2.3c-0.5,1.4-1.5,2.4-2.8,3c-1.3,0.5-2.8,0.5-4.1-0.1l-2.2-1c-1.2-0.6-2.3-0.1-2.9,0.5c-0.6,0.6-1.1,1.7-0.5,2.9l1,2.2c0.6,1.3,0.7,2.8,0.1,4.1s-1.6,2.4-3,2.8l-2.3,0.8c-1.3,0.4-1.7,1.5-1.7,2.4c0,0.9,0.4,2,1.7,2.4L7.1,29c1.4,0.5,2.4,1.5,3,2.8s0.5,2.8-0.1,4.1l-1,2.2c-0.6,1.2-0.1,2.3,0.5,2.9c0.6,0.6,1.7,1.1,2.9,0.5l2.2-1C15.2,40.3,16,40.1,16.7,40.1z'/></svg>",
+                "iconWidth": 40,
+                "iconHeight": 40,
+                "hr": "#125d6aff",
+                "ID": 21,
+                "name": "Îlot Kime",
+                "type": "Site naturel sacré",
+                "note": "Situé en territoire de Kalehe, l’îlot Kime est enveloppé d’un mystère que les générations se transmettent avec respect et crainte. Selon les anciens, Kime fut autrefois un lieu d’asile pour les chefs spirituels en période de guerre. On y venait chercher la paix, l’inspiration, et la bénédiction des ancêtres. Son isolement naturel en faisait un sanctuaire sacré, où seuls les initiés pouvaient s’aventurer. Le silence qui y règne encore aujourd’hui est perçu comme une voix des esprits du lac, rappelant aux vivants que cet îlot n’est pas un simple bout de terre, mais un cœur battant de mémoire. Dans l’imaginaire collectif des pêcheurs et des éleveurs de Kalehe, Kime est aussi le siège des esprits protecteurs du lac. Des mythes parlent même d’apparitions lumineuses à la tombée de la nuit, signes que les ancêtres y veillent toujours. Cette spiritualité profonde relie l’écologie à la tradition, fondant un pacte invisible entre nature et humanité.<br/><br/><a target='blank' href='https://dec-rdc.org/kime-lilot-des-secrets-anciens-emmanuel-ndimwiza-devoile-les-recits-sacres-du-lac-kivu/'>Kime, l’îlot des secrets anciens : Emmanuel Ndimwiza dévoile les récits sacrés du lac Kivu</a>"
+            },
+            "geometry": {
+                "coordinates": [
+                    28.95583742539003,
+                    -2.2671300083049872
+                ],
+                "type": "Point"
+            },
+            "id": 21
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "svgHtml": "<svg x='0px' y='0px' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50;' fill='#125d6aff' xml:space='preserve'><path d='M24.8,50c-2.2,0-4.1-1.3-4.8-3.4l-0.8-2.3c-0.2-0.7-0.8-1.2-1.4-1.5c-0.7-0.3-1.4-0.3-2.1,0.1l-2.2,1c-2,0.9-4.2,0.5-5.8-1c-1.5-1.5-1.9-3.8-1-5.8l1-2.2C8,34.3,8,33.5,7.8,32.9c-0.3-0.7-0.8-1.2-1.5-1.4L4,30.6c-2.1-0.7-3.4-2.6-3.4-4.8c0-2.2,1.3-4.1,3.4-4.8l2.3-0.8C7,20,7.5,19.5,7.8,18.8C8,18.1,8,17.4,7.7,16.7l-1-2.2c-0.9-2-0.5-4.2,1-5.8c1.5-1.5,3.8-1.9,5.8-1l2.2,1c0.7,0.3,1.4,0.3,2.1,0.1c0.7-0.3,1.2-0.8,1.4-1.5L20,5c0.7-2.1,2.6-3.4,4.8-3.4c2.2,0,4.1,1.3,4.8,3.4l0.8,2.3c0.2,0.7,0.8,1.2,1.4,1.5c0.7,0.3,1.4,0.3,2.1-0.1l2.2-1c2-0.9,4.2-0.5,5.8,1c1.5,1.5,1.9,3.8,1,5.8l-1,2.2c-0.3,0.7-0.3,1.4-0.1,2.1c0.3,0.7,0.8,1.2,1.5,1.4l2.3,0.8c2.1,0.7,3.4,2.6,3.4,4.8c0,2.2-1.3,4.1-3.4,4.8l-2.3,0.8c-0.7,0.2-1.2,0.8-1.5,1.4c-0.3,0.7-0.3,1.4,0.1,2.1l1,2.2c0.9,2,0.5,4.2-1,5.8c-1.5,1.5-3.8,1.9-5.8,1l-2.2-1c-0.7-0.3-1.4-0.3-2.1-0.1c-0.7,0.3-1.2,0.8-1.4,1.5l-0.8,2.3C28.8,48.7,26.9,50,24.8,50z M16.7,40.1c0.7,0,1.3,0.1,1.9,0.4c1.3,0.5,2.4,1.6,2.8,3l0.8,2.3c0.4,1.3,1.5,1.7,2.4,1.7c0.9,0,2-0.4,2.4-1.7l0.8-2.3c0.5-1.4,1.5-2.4,2.8-3c1.3-0.5,2.8-0.5,4.1,0.1l2.2,1c1.2,0.6,2.3,0.1,2.9-0.5c0.6-0.6,1.1-1.7,0.5-2.9l-1-2.2c-0.6-1.3-0.7-2.8-0.1-4.1c0.5-1.3,1.6-2.4,3-2.8l2.3-0.8c1.3-0.4,1.7-1.5,1.7-2.4c0-0.9-0.4-2-1.7-2.4l-2.3-0.8c-1.4-0.5-2.4-1.5-3-2.8c-0.5-1.3-0.5-2.8,0.1-4.1l1-2.2c0.6-1.2,0.1-2.3-0.5-2.9c-0.6-0.6-1.7-1.1-2.9-0.5l-2.2,1c-1.3,0.6-2.8,0.7-4.1,0.1s-2.4-1.6-2.8-3l-0.8-2.3c-0.4-1.3-1.5-1.7-2.4-1.7c-0.9,0-2,0.4-2.4,1.7l-0.8,2.3c-0.5,1.4-1.5,2.4-2.8,3c-1.3,0.5-2.8,0.5-4.1-0.1l-2.2-1c-1.2-0.6-2.3-0.1-2.9,0.5c-0.6,0.6-1.1,1.7-0.5,2.9l1,2.2c0.6,1.3,0.7,2.8,0.1,4.1s-1.6,2.4-3,2.8l-2.3,0.8c-1.3,0.4-1.7,1.5-1.7,2.4c0,0.9,0.4,2,1.7,2.4L7.1,29c1.4,0.5,2.4,1.5,3,2.8s0.5,2.8-0.1,4.1l-1,2.2c-0.6,1.2-0.1,2.3,0.5,2.9c0.6,0.6,1.7,1.1,2.9,0.5l2.2-1C15.2,40.3,16,40.1,16.7,40.1z'/></svg>",
+                "iconWidth": 40,
+                "iconHeight": 40,
+                "hr": "#125d6aff",
+                "ID": 22,
                 "name": "Îlot de Nkombo",
                 "type": "Site naturel sacré",
                 "note": "Au cœur du territoire de Kalehe, l’îlot de Nkombo surgit comme une énigme sur les eaux profondes du lac Kivu. Dans l’imaginaire collectif des communautés riveraines, Nkombo fut longtemps considéré comme une terre d’exil spirituel. On y envoyait les fauteurs de troubles, non pour les punir, mais pour qu’ils soient purifiés par les forces du lac. Cette île, protégée par les esprits, était le théâtre de rites de réintégration communautaire. Elle servait aussi de refuge pour les devins, les guérisseurs et les femmes fuyant l’oppression des guerres anciennes.<br/><br/><a target='blank' href='https://dec-rdc.org/nkombo-lile-de-lexil-sacre-emmanuel-ndimwiza-explore-les-recits-oublies-du-lac-kivu/'>Nkombo, l’île de l’exil sacré : Emmanuel Ndimwiza explore les récits oubliés du lac Kivu</a>"
@@ -482,28 +482,91 @@ export const points = {
                 ],
                 "type": "Point"
             },
-            "id": 18
+            "id": 22
         },
-                {
+        {
             "type": "Feature",
             "properties": {
                 "svgHtml": "<svg x='0px' y='0px' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50;' fill='#125d6aff' xml:space='preserve'><path d='M24.8,50c-2.2,0-4.1-1.3-4.8-3.4l-0.8-2.3c-0.2-0.7-0.8-1.2-1.4-1.5c-0.7-0.3-1.4-0.3-2.1,0.1l-2.2,1c-2,0.9-4.2,0.5-5.8-1c-1.5-1.5-1.9-3.8-1-5.8l1-2.2C8,34.3,8,33.5,7.8,32.9c-0.3-0.7-0.8-1.2-1.5-1.4L4,30.6c-2.1-0.7-3.4-2.6-3.4-4.8c0-2.2,1.3-4.1,3.4-4.8l2.3-0.8C7,20,7.5,19.5,7.8,18.8C8,18.1,8,17.4,7.7,16.7l-1-2.2c-0.9-2-0.5-4.2,1-5.8c1.5-1.5,3.8-1.9,5.8-1l2.2,1c0.7,0.3,1.4,0.3,2.1,0.1c0.7-0.3,1.2-0.8,1.4-1.5L20,5c0.7-2.1,2.6-3.4,4.8-3.4c2.2,0,4.1,1.3,4.8,3.4l0.8,2.3c0.2,0.7,0.8,1.2,1.4,1.5c0.7,0.3,1.4,0.3,2.1-0.1l2.2-1c2-0.9,4.2-0.5,5.8,1c1.5,1.5,1.9,3.8,1,5.8l-1,2.2c-0.3,0.7-0.3,1.4-0.1,2.1c0.3,0.7,0.8,1.2,1.5,1.4l2.3,0.8c2.1,0.7,3.4,2.6,3.4,4.8c0,2.2-1.3,4.1-3.4,4.8l-2.3,0.8c-0.7,0.2-1.2,0.8-1.5,1.4c-0.3,0.7-0.3,1.4,0.1,2.1l1,2.2c0.9,2,0.5,4.2-1,5.8c-1.5,1.5-3.8,1.9-5.8,1l-2.2-1c-0.7-0.3-1.4-0.3-2.1-0.1c-0.7,0.3-1.2,0.8-1.4,1.5l-0.8,2.3C28.8,48.7,26.9,50,24.8,50z M16.7,40.1c0.7,0,1.3,0.1,1.9,0.4c1.3,0.5,2.4,1.6,2.8,3l0.8,2.3c0.4,1.3,1.5,1.7,2.4,1.7c0.9,0,2-0.4,2.4-1.7l0.8-2.3c0.5-1.4,1.5-2.4,2.8-3c1.3-0.5,2.8-0.5,4.1,0.1l2.2,1c1.2,0.6,2.3,0.1,2.9-0.5c0.6-0.6,1.1-1.7,0.5-2.9l-1-2.2c-0.6-1.3-0.7-2.8-0.1-4.1c0.5-1.3,1.6-2.4,3-2.8l2.3-0.8c1.3-0.4,1.7-1.5,1.7-2.4c0-0.9-0.4-2-1.7-2.4l-2.3-0.8c-1.4-0.5-2.4-1.5-3-2.8c-0.5-1.3-0.5-2.8,0.1-4.1l1-2.2c0.6-1.2,0.1-2.3-0.5-2.9c-0.6-0.6-1.7-1.1-2.9-0.5l-2.2,1c-1.3,0.6-2.8,0.7-4.1,0.1s-2.4-1.6-2.8-3l-0.8-2.3c-0.4-1.3-1.5-1.7-2.4-1.7c-0.9,0-2,0.4-2.4,1.7l-0.8,2.3c-0.5,1.4-1.5,2.4-2.8,3c-1.3,0.5-2.8,0.5-4.1-0.1l-2.2-1c-1.2-0.6-2.3-0.1-2.9,0.5c-0.6,0.6-1.1,1.7-0.5,2.9l1,2.2c0.6,1.3,0.7,2.8,0.1,4.1s-1.6,2.4-3,2.8l-2.3,0.8c-1.3,0.4-1.7,1.5-1.7,2.4c0,0.9,0.4,2,1.7,2.4L7.1,29c1.4,0.5,2.4,1.5,3,2.8s0.5,2.8-0.1,4.1l-1,2.2c-0.6,1.2-0.1,2.3,0.5,2.9c0.6,0.6,1.7,1.1,2.9,0.5l2.2-1C15.2,40.3,16,40.1,16.7,40.1z'/></svg>",
                 "iconWidth": 40,
                 "iconHeight": 40,
                 "hr": "#125d6aff",
-                "ID": 19,
+                "ID": 23,
                 "name": "Îlot d’Ibinja",
                 "type": "Site naturel sacré",
                 "note": "Dans la mémoire collective des peuples riverains, Ibinja fut jadis un centre royal, une île de pouvoir où résidaient les chefs spirituels et politiques de la région. On y rendait justice sous l’arbre sacré et l’on y célébrait les fêtes des récoltes dans un rituel mêlant chants, danses et invocations aux ancêtres. L’île était aussi réputée pour sa neutralité : aucun sang n’y devait couler, et toute querelle y trouvait résolution. L’île abrite encore les traces invisibles de son passé sacré. Les anciens parlent de pierres disposées en cercles, vestiges d’autels oubliés, et de mystérieuses lumières vues par les pêcheurs lors de nuits calmes. Ibinja était aussi le lieu d’initiation pour certains clans, où les jeunes garçons devenaient hommes par des rites de passage strictement codifiés.<br/><br/><a target='blank' href='https://dec-rdc.org/ibinja-lile-royale-oubliee-emmanuel-ndimwiza-ravive-les-memoires-ancestrales-du-lac-kivu/'>Ibinja, l’île royale oubliée : Emmanuel Ndimwiza ravive les mémoires ancestrales du lac Kivu</a>"
             },
             "geometry": {
                 "coordinates": [
-                   28.940503186770012,
-                   -2.3519617984152523
+                    28.940503186770012,
+                    -2.3519617984152523
                 ],
                 "type": "Point"
             },
-            "id": 19
+            "id": 23
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "svgHtml": "<svg x='0px' y='0px' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50;' fill='#125d6aff' xml:space='preserve'><path d='M24.8,50c-2.2,0-4.1-1.3-4.8-3.4l-0.8-2.3c-0.2-0.7-0.8-1.2-1.4-1.5c-0.7-0.3-1.4-0.3-2.1,0.1l-2.2,1c-2,0.9-4.2,0.5-5.8-1c-1.5-1.5-1.9-3.8-1-5.8l1-2.2C8,34.3,8,33.5,7.8,32.9c-0.3-0.7-0.8-1.2-1.5-1.4L4,30.6c-2.1-0.7-3.4-2.6-3.4-4.8c0-2.2,1.3-4.1,3.4-4.8l2.3-0.8C7,20,7.5,19.5,7.8,18.8C8,18.1,8,17.4,7.7,16.7l-1-2.2c-0.9-2-0.5-4.2,1-5.8c1.5-1.5,3.8-1.9,5.8-1l2.2,1c0.7,0.3,1.4,0.3,2.1,0.1c0.7-0.3,1.2-0.8,1.4-1.5L20,5c0.7-2.1,2.6-3.4,4.8-3.4c2.2,0,4.1,1.3,4.8,3.4l0.8,2.3c0.2,0.7,0.8,1.2,1.4,1.5c0.7,0.3,1.4,0.3,2.1-0.1l2.2-1c2-0.9,4.2-0.5,5.8,1c1.5,1.5,1.9,3.8,1,5.8l-1,2.2c-0.3,0.7-0.3,1.4-0.1,2.1c0.3,0.7,0.8,1.2,1.5,1.4l2.3,0.8c2.1,0.7,3.4,2.6,3.4,4.8c0,2.2-1.3,4.1-3.4,4.8l-2.3,0.8c-0.7,0.2-1.2,0.8-1.5,1.4c-0.3,0.7-0.3,1.4,0.1,2.1l1,2.2c0.9,2,0.5,4.2-1,5.8c-1.5,1.5-3.8,1.9-5.8,1l-2.2-1c-0.7-0.3-1.4-0.3-2.1-0.1c-0.7,0.3-1.2,0.8-1.4,1.5l-0.8,2.3C28.8,48.7,26.9,50,24.8,50z M16.7,40.1c0.7,0,1.3,0.1,1.9,0.4c1.3,0.5,2.4,1.6,2.8,3l0.8,2.3c0.4,1.3,1.5,1.7,2.4,1.7c0.9,0,2-0.4,2.4-1.7l0.8-2.3c0.5-1.4,1.5-2.4,2.8-3c1.3-0.5,2.8-0.5,4.1,0.1l2.2,1c1.2,0.6,2.3,0.1,2.9-0.5c0.6-0.6,1.1-1.7,0.5-2.9l-1-2.2c-0.6-1.3-0.7-2.8-0.1-4.1c0.5-1.3,1.6-2.4,3-2.8l2.3-0.8c1.3-0.4,1.7-1.5,1.7-2.4c0-0.9-0.4-2-1.7-2.4l-2.3-0.8c-1.4-0.5-2.4-1.5-3-2.8c-0.5-1.3-0.5-2.8,0.1-4.1l1-2.2c0.6-1.2,0.1-2.3-0.5-2.9c-0.6-0.6-1.7-1.1-2.9-0.5l-2.2,1c-1.3,0.6-2.8,0.7-4.1,0.1s-2.4-1.6-2.8-3l-0.8-2.3c-0.4-1.3-1.5-1.7-2.4-1.7c-0.9,0-2,0.4-2.4,1.7l-0.8,2.3c-0.5,1.4-1.5,2.4-2.8,3c-1.3,0.5-2.8,0.5-4.1-0.1l-2.2-1c-1.2-0.6-2.3-0.1-2.9,0.5c-0.6,0.6-1.1,1.7-0.5,2.9l1,2.2c0.6,1.3,0.7,2.8,0.1,4.1s-1.6,2.4-3,2.8l-2.3,0.8c-1.3,0.4-1.7,1.5-1.7,2.4c0,0.9,0.4,2,1.7,2.4L7.1,29c1.4,0.5,2.4,1.5,3,2.8s0.5,2.8-0.1,4.1l-1,2.2c-0.6,1.2-0.1,2.3,0.5,2.9c0.6,0.6,1.7,1.1,2.9,0.5l2.2-1C15.2,40.3,16,40.1,16.7,40.1z'/></svg>",
+                "iconWidth": 40,
+                "iconHeight": 40,
+                "hr": "#125d6aff",
+                "ID": 24,
+                "name": "Colline Kankungu",
+                "type": "Point panoramique",
+                "note": "Kankungu est un réservoir vivant de savoirs agricoles locaux, une mémoire de pratiques durables forgées par des générations de cultivateurs Havu. Manioc, haricot, patate douce et autres cultures s’épanouissent dans une harmonie que seules les collines savent préserver. Elle incarne un imaginaire collectif où la colline devient mère nourricière, école silencieuse et sanctuaire spirituel."
+            },
+            "geometry": {
+                "coordinates": [
+                    29.019656486547113,
+                    -2.198756341166086
+                ],
+                "type": "Point"
+            },
+            "id": 24
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "svgHtml": "<svg x='0px' y='0px' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50;' fill='#125d6aff' xml:space='preserve'><path d='M24.8,50c-2.2,0-4.1-1.3-4.8-3.4l-0.8-2.3c-0.2-0.7-0.8-1.2-1.4-1.5c-0.7-0.3-1.4-0.3-2.1,0.1l-2.2,1c-2,0.9-4.2,0.5-5.8-1c-1.5-1.5-1.9-3.8-1-5.8l1-2.2C8,34.3,8,33.5,7.8,32.9c-0.3-0.7-0.8-1.2-1.5-1.4L4,30.6c-2.1-0.7-3.4-2.6-3.4-4.8c0-2.2,1.3-4.1,3.4-4.8l2.3-0.8C7,20,7.5,19.5,7.8,18.8C8,18.1,8,17.4,7.7,16.7l-1-2.2c-0.9-2-0.5-4.2,1-5.8c1.5-1.5,3.8-1.9,5.8-1l2.2,1c0.7,0.3,1.4,0.3,2.1,0.1c0.7-0.3,1.2-0.8,1.4-1.5L20,5c0.7-2.1,2.6-3.4,4.8-3.4c2.2,0,4.1,1.3,4.8,3.4l0.8,2.3c0.2,0.7,0.8,1.2,1.4,1.5c0.7,0.3,1.4,0.3,2.1-0.1l2.2-1c2-0.9,4.2-0.5,5.8,1c1.5,1.5,1.9,3.8,1,5.8l-1,2.2c-0.3,0.7-0.3,1.4-0.1,2.1c0.3,0.7,0.8,1.2,1.5,1.4l2.3,0.8c2.1,0.7,3.4,2.6,3.4,4.8c0,2.2-1.3,4.1-3.4,4.8l-2.3,0.8c-0.7,0.2-1.2,0.8-1.5,1.4c-0.3,0.7-0.3,1.4,0.1,2.1l1,2.2c0.9,2,0.5,4.2-1,5.8c-1.5,1.5-3.8,1.9-5.8,1l-2.2-1c-0.7-0.3-1.4-0.3-2.1-0.1c-0.7,0.3-1.2,0.8-1.4,1.5l-0.8,2.3C28.8,48.7,26.9,50,24.8,50z M16.7,40.1c0.7,0,1.3,0.1,1.9,0.4c1.3,0.5,2.4,1.6,2.8,3l0.8,2.3c0.4,1.3,1.5,1.7,2.4,1.7c0.9,0,2-0.4,2.4-1.7l0.8-2.3c0.5-1.4,1.5-2.4,2.8-3c1.3-0.5,2.8-0.5,4.1,0.1l2.2,1c1.2,0.6,2.3,0.1,2.9-0.5c0.6-0.6,1.1-1.7,0.5-2.9l-1-2.2c-0.6-1.3-0.7-2.8-0.1-4.1c0.5-1.3,1.6-2.4,3-2.8l2.3-0.8c1.3-0.4,1.7-1.5,1.7-2.4c0-0.9-0.4-2-1.7-2.4l-2.3-0.8c-1.4-0.5-2.4-1.5-3-2.8c-0.5-1.3-0.5-2.8,0.1-4.1l1-2.2c0.6-1.2,0.1-2.3-0.5-2.9c-0.6-0.6-1.7-1.1-2.9-0.5l-2.2,1c-1.3,0.6-2.8,0.7-4.1,0.1s-2.4-1.6-2.8-3l-0.8-2.3c-0.4-1.3-1.5-1.7-2.4-1.7c-0.9,0-2,0.4-2.4,1.7l-0.8,2.3c-0.5,1.4-1.5,2.4-2.8,3c-1.3,0.5-2.8,0.5-4.1-0.1l-2.2-1c-1.2-0.6-2.3-0.1-2.9,0.5c-0.6,0.6-1.1,1.7-0.5,2.9l1,2.2c0.6,1.3,0.7,2.8,0.1,4.1s-1.6,2.4-3,2.8l-2.3,0.8c-1.3,0.4-1.7,1.5-1.7,2.4c0,0.9,0.4,2,1.7,2.4L7.1,29c1.4,0.5,2.4,1.5,3,2.8s0.5,2.8-0.1,4.1l-1,2.2c-0.6,1.2-0.1,2.3,0.5,2.9c0.6,0.6,1.7,1.1,2.9,0.5l2.2-1C15.2,40.3,16,40.1,16.7,40.1z'/></svg>",
+                "iconWidth": 40,
+                "iconHeight": 40,
+                "hr": "#125d6aff",
+                "ID": 25,
+                "name": "Mont Mani",
+                "type": "Point panoramique",
+                "note": "Dominant majestueusement le paysage du territoire insulaire d’Idjwi, le Mont Mani s’impose comme une montagne inspirante et mystérieuse. Son sommet, souvent enveloppé de brume matinale, offre une vue spectaculaire sur le lac Kivu, les collines verdoyantes d’Idjwi et les reliefs lointains du Rwanda et du Sud-Kivu. Véritable sanctuaire naturel, Mont Mani attire les randonneurs, les chercheurs de sens, les amoureux de nature et les passionnés de photographie."
+            },
+            "geometry": {
+                "coordinates": [
+                    29.04710645908156,
+                    -2.256052364968242
+                ],
+                "type": "Point"
+            },
+            "id": 25
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "svgHtml": "<svg x='0px' y='0px' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50;' fill='#125d6aff' xml:space='preserve'><path d='M24.8,50c-2.2,0-4.1-1.3-4.8-3.4l-0.8-2.3c-0.2-0.7-0.8-1.2-1.4-1.5c-0.7-0.3-1.4-0.3-2.1,0.1l-2.2,1c-2,0.9-4.2,0.5-5.8-1c-1.5-1.5-1.9-3.8-1-5.8l1-2.2C8,34.3,8,33.5,7.8,32.9c-0.3-0.7-0.8-1.2-1.5-1.4L4,30.6c-2.1-0.7-3.4-2.6-3.4-4.8c0-2.2,1.3-4.1,3.4-4.8l2.3-0.8C7,20,7.5,19.5,7.8,18.8C8,18.1,8,17.4,7.7,16.7l-1-2.2c-0.9-2-0.5-4.2,1-5.8c1.5-1.5,3.8-1.9,5.8-1l2.2,1c0.7,0.3,1.4,0.3,2.1,0.1c0.7-0.3,1.2-0.8,1.4-1.5L20,5c0.7-2.1,2.6-3.4,4.8-3.4c2.2,0,4.1,1.3,4.8,3.4l0.8,2.3c0.2,0.7,0.8,1.2,1.4,1.5c0.7,0.3,1.4,0.3,2.1-0.1l2.2-1c2-0.9,4.2-0.5,5.8,1c1.5,1.5,1.9,3.8,1,5.8l-1,2.2c-0.3,0.7-0.3,1.4-0.1,2.1c0.3,0.7,0.8,1.2,1.5,1.4l2.3,0.8c2.1,0.7,3.4,2.6,3.4,4.8c0,2.2-1.3,4.1-3.4,4.8l-2.3,0.8c-0.7,0.2-1.2,0.8-1.5,1.4c-0.3,0.7-0.3,1.4,0.1,2.1l1,2.2c0.9,2,0.5,4.2-1,5.8c-1.5,1.5-3.8,1.9-5.8,1l-2.2-1c-0.7-0.3-1.4-0.3-2.1-0.1c-0.7,0.3-1.2,0.8-1.4,1.5l-0.8,2.3C28.8,48.7,26.9,50,24.8,50z M16.7,40.1c0.7,0,1.3,0.1,1.9,0.4c1.3,0.5,2.4,1.6,2.8,3l0.8,2.3c0.4,1.3,1.5,1.7,2.4,1.7c0.9,0,2-0.4,2.4-1.7l0.8-2.3c0.5-1.4,1.5-2.4,2.8-3c1.3-0.5,2.8-0.5,4.1,0.1l2.2,1c1.2,0.6,2.3,0.1,2.9-0.5c0.6-0.6,1.1-1.7,0.5-2.9l-1-2.2c-0.6-1.3-0.7-2.8-0.1-4.1c0.5-1.3,1.6-2.4,3-2.8l2.3-0.8c1.3-0.4,1.7-1.5,1.7-2.4c0-0.9-0.4-2-1.7-2.4l-2.3-0.8c-1.4-0.5-2.4-1.5-3-2.8c-0.5-1.3-0.5-2.8,0.1-4.1l1-2.2c0.6-1.2,0.1-2.3-0.5-2.9c-0.6-0.6-1.7-1.1-2.9-0.5l-2.2,1c-1.3,0.6-2.8,0.7-4.1,0.1s-2.4-1.6-2.8-3l-0.8-2.3c-0.4-1.3-1.5-1.7-2.4-1.7c-0.9,0-2,0.4-2.4,1.7l-0.8,2.3c-0.5,1.4-1.5,2.4-2.8,3c-1.3,0.5-2.8,0.5-4.1-0.1l-2.2-1c-1.2-0.6-2.3-0.1-2.9,0.5c-0.6,0.6-1.1,1.7-0.5,2.9l1,2.2c0.6,1.3,0.7,2.8,0.1,4.1s-1.6,2.4-3,2.8l-2.3,0.8c-1.3,0.4-1.7,1.5-1.7,2.4c0,0.9,0.4,2,1.7,2.4L7.1,29c1.4,0.5,2.4,1.5,3,2.8s0.5,2.8-0.1,4.1l-1,2.2c-0.6,1.2-0.1,2.3,0.5,2.9c0.6,0.6,1.7,1.1,2.9,0.5l2.2-1C15.2,40.3,16,40.1,16.7,40.1z'/></svg>",
+                "iconWidth": 40,
+                "iconHeight": 40,
+                "hr": "#125d6aff",
+                "ID": 26,
+                "name": "Colline Kamishirhu",
+                "type": "Point panoramique",
+                "note": "Kamishirhu porte un lourd passé empreint de douleur et de silence. Selon les récits transmis de génération en génération, cette colline servait autrefois de lieu d’exécution pour les jeunes filles portant des grossesses non désirées – appelées « Efunzi » en kihavu. Les grands-parents racontent qu’elles y étaient emmenées, puis tuées et abandonnées sur place, leurs corps jamais inhumés, leurs noms effacés de la mémoire familiale. Ce mythe, bien que tragique, fait partie intégrante de l’imaginaire collectif d’Idjwi.<br/><br/><a target='blank' href='https://dec-rdc.org/kamishirhu-colline-de-memoire-et-de-mysteres-au-coeur-du-territoire-insulaire-didjwi/'>Kamishirhu : Colline de mémoire et de mystères au cœur du territoire insulaire d’Idjwi</a>"
+            },
+            "geometry": {
+                "coordinates": [
+                    29.04710645908156,
+                    -2.256052364968242
+                ],
+                "type": "Point"
+            },
+            "id": 26
         }
     ]
 };
