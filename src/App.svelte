@@ -138,7 +138,7 @@
   onMount(() => {
     map = L.map(mapEl, {
       center: [-2.22458, 29.03813],
-      zoom: 15,
+      zoom: 14,
       maxBounds: [
         [-2.6293, 28.6075],
         [-1.5339, 29.507],
@@ -195,7 +195,7 @@
   <div class="bottom-bar-content">
     <img src="./logo-dec.png" alt="Logo" class="bottom-bar-logo" />
     <span class="bottom-bar-title"
-      >carte du tourisme écoculturel de l'île d'Idjwi</span
+      >carte du tourisme écoculturel et spirituel de l'île d'Idjwi</span
     >
   </div>
 </div>
