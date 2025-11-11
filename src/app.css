@@ -156,6 +156,7 @@ button:focus-visible {
   z-index: 10000;
   pointer-events: auto !important;
   margin-bottom: 30px !important;
+  z-index: 9999;
 }
 
 .leaflet-popup.leaflet-zoom-animated {
@@ -334,9 +335,17 @@ button:focus-visible {
 }
 
 @media only screen and (max-width: 600px) {
+  .modal-bottom-right {
+    max-width: 74vw;
+  }
+
   .bottom-bar-content {
     width: 80%;
     max-width: 80%;
+  }
+
+  .bottom-bar-title {
+    font-size: 1em;
   }
 
   .leaflet-popup {

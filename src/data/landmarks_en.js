@@ -1,4 +1,4 @@
-export const landmarks = {
+export const landmarks_en = {
     "type": "FeatureCollection",
     "features": [
         {
@@ -10,8 +10,8 @@ export const landmarks = {
                 "hr": "#000000",
                 "ID": 0,
                 "name": "Mulindwa",
-                "type": "Cosmologie et connaissances traditionnelles",
-                "note": "Dans les profondeurs du lac Kivu, les communautés riveraines ne voient pas seulement une étendue d’eau, mais un espace habité, sacré, protégé par un esprit ancien : Mulindwa, aussi appelé Mugobe wa Kivu. Selon les traditions orales transmises à Idjwi, Kalehe ou Goma, cet esprit veille sur l’équilibre du lac, protège ses eaux et avertit les hommes lorsqu’ils s’apprêtent à franchir les limites du sacré.<br/><br/><a target='blank' href='https://dec-rdc.org/le-souffle-de-mulindwa-emmanuel-ndimwiza-devoile-la-memoire-spirituelle-du-lac-kivu/'>Le souffle de Mulindwa : Emmanuel Ndimwiza dévoile la mémoire spirituelle du lac Kivu</a>"
+                "type": "Cosmology and traditional knowledge",
+                "note": "In the depths of Lake Kivu, the communities living along its shores see not just a body of water, but a sacred, inhabited space protected by an ancient spirit: Mulindwa, also known as Mugobe wa Kivu. According to oral traditions passed down in Idjwi, Kalehe and Goma, this spirit watches over the lake's balance, protects its waters and warns humans when they are about to cross sacred boundaries. <br/><br/><a target=“blank” href=“https://dec-rdc.org/le-souffle-de-mulindwa-emmanuel-ndimwiza-devoile-la-memoire-spirituelle-du-lac-kivu/”>Le souffle de Mulindwa : Emmanuel Ndimwiza dévoile la mémoire spirituelle du lac Kivu</a>"
             },
             "geometry": {
                 "coordinates": [
@@ -31,8 +31,8 @@ export const landmarks = {
                 "hr": "#000000",
                 "ID": 1,
                 "name": "Mulindwa",
-                "type": "Cosmologie et connaissances traditionnelles",
-                "note": "Dans les profondeurs du lac Kivu, les communautés riveraines ne voient pas seulement une étendue d’eau, mais un espace habité, sacré, protégé par un esprit ancien : Mulindwa, aussi appelé Mugobe wa Kivu. Selon les traditions orales transmises à Idjwi, Kalehe ou Goma, cet esprit veille sur l’équilibre du lac, protège ses eaux et avertit les hommes lorsqu’ils s’apprêtent à franchir les limites du sacré.<br/><br/><a target='blank' href='https://dec-rdc.org/le-souffle-de-mulindwa-emmanuel-ndimwiza-devoile-la-memoire-spirituelle-du-lac-kivu/'>Le souffle de Mulindwa : Emmanuel Ndimwiza dévoile la mémoire spirituelle du lac Kivu</a>"
+                "type": "Cosmology and traditional knowledge",
+                "note": "In the depths of Lake Kivu, the communities living along its shores see not just a body of water, but a sacred, inhabited space protected by an ancient spirit: Mulindwa, also known as Mugobe wa Kivu. According to oral traditions passed down in Idjwi, Kalehe and Goma, this spirit watches over the lake's balance, protects its waters and warns humans when they are about to cross sacred boundaries. <br/><br/><a target=“blank” href=“https://dec-rdc.org/le-souffle-de-mulindwa-emmanuel-ndimwiza-devoile-la-memoire-spirituelle-du-lac-kivu/”>Le souffle de Mulindwa : Emmanuel Ndimwiza dévoile la mémoire spirituelle du lac Kivu</a>"
             },
             "geometry": {
                 "coordinates": [
@@ -52,8 +52,8 @@ export const landmarks = {
                 "hr": "#000000",
                 "ID": 2,
                 "name": "Mulindwa",
-                "type": "Cosmologie et connaissances traditionnelles",
-                "note": "Dans les profondeurs du lac Kivu, les communautés riveraines ne voient pas seulement une étendue d’eau, mais un espace habité, sacré, protégé par un esprit ancien : Mulindwa, aussi appelé Mugobe wa Kivu. Selon les traditions orales transmises à Idjwi, Kalehe ou Goma, cet esprit veille sur l’équilibre du lac, protège ses eaux et avertit les hommes lorsqu’ils s’apprêtent à franchir les limites du sacré.<br/><br/><a target='blank' href='https://dec-rdc.org/le-souffle-de-mulindwa-emmanuel-ndimwiza-devoile-la-memoire-spirituelle-du-lac-kivu/'>Le souffle de Mulindwa : Emmanuel Ndimwiza dévoile la mémoire spirituelle du lac Kivu</a>"
+                "type": "Cosmology and traditional knowledge",
+                "note": "In the depths of Lake Kivu, the communities living along its shores see not just a body of water, but a sacred, inhabited space protected by an ancient spirit: Mulindwa, also known as Mugobe wa Kivu. According to oral traditions passed down in Idjwi, Kalehe and Goma, this spirit watches over the lake's balance, protects its waters and warns humans when they are about to cross sacred boundaries. <br/><br/><a target=“blank” href=“https://dec-rdc.org/le-souffle-de-mulindwa-emmanuel-ndimwiza-devoile-la-memoire-spirituelle-du-lac-kivu/”>Le souffle de Mulindwa : Emmanuel Ndimwiza dévoile la mémoire spirituelle du lac Kivu</a>"
             },
             "geometry": {
                 "coordinates": [
@@ -73,8 +73,8 @@ export const landmarks = {
                 "hr": "#000000",
                 "ID": 3,
                 "name": "Mulindwa",
-                "type": "Cosmologie et connaissances traditionnelles",
-                "note": "Dans les profondeurs du lac Kivu, les communautés riveraines ne voient pas seulement une étendue d’eau, mais un espace habité, sacré, protégé par un esprit ancien : Mulindwa, aussi appelé Mugobe wa Kivu. Selon les traditions orales transmises à Idjwi, Kalehe ou Goma, cet esprit veille sur l’équilibre du lac, protège ses eaux et avertit les hommes lorsqu’ils s’apprêtent à franchir les limites du sacré.<br/><br/><a target='blank' href='https://dec-rdc.org/le-souffle-de-mulindwa-emmanuel-ndimwiza-devoile-la-memoire-spirituelle-du-lac-kivu/'>Le souffle de Mulindwa : Emmanuel Ndimwiza dévoile la mémoire spirituelle du lac Kivu</a>"
+                "type": "Cosmology and traditional knowledge",
+                "note": "In the depths of Lake Kivu, the communities living along its shores see not just a body of water, but a sacred, inhabited space protected by an ancient spirit: Mulindwa, also known as Mugobe wa Kivu. According to oral traditions passed down in Idjwi, Kalehe and Goma, this spirit watches over the lake's balance, protects its waters and warns humans when they are about to cross sacred boundaries. <br/><br/><a target=“blank” href=“https://dec-rdc.org/le-souffle-de-mulindwa-emmanuel-ndimwiza-devoile-la-memoire-spirituelle-du-lac-kivu/”>Le souffle de Mulindwa : Emmanuel Ndimwiza dévoile la mémoire spirituelle du lac Kivu</a>"
             },
             "geometry": {
                 "coordinates": [
@@ -94,8 +94,8 @@ export const landmarks = {
                 "hr": "#000000",
                 "ID": 4,
                 "name": "Mukura",
-                "type": "Cosmologie et connaissances traditionnelles",
-                "note": "Mukura est la déesse de la fertilité des eaux, invoquée par les pêcheurs qui pratiquent des rituels au bord du lac pour la rendre hommage. Son rôle est vitaux dans la régulation naturelle de l’écosystème selon les traditions locales, et sa présence est ressentie dans les cycles de vie qui rythment le quotidien des communautés.<br/><br/><a target='blank' href='https://dec-rdc.org/gardiens-invisibles-du-lac-kivu-emmanuel-ndimwiza-explore-les-divinites-sacrees-des-communautes-riveraines/'>Gardiens invisibles du lac Kivu : Emmanuel Ndimwiza explore les divinités sacrées des communautés riveraines</a>"
+                "type": "Cosmology and traditional knowledge",
+                "note": "Mukura is the goddess of water fertility, invoked by fishermen who perform rituals on the lake shore to pay homage to her. According to local traditions, she plays a vital role in the natural regulation of the ecosystem, and her presence is felt in the life cycles that punctuate the daily life of communities. <br/><br/><a target=“blank” href=“https://dec-rdc.org/gardiens-invisibles-du-lac-kivu-emmanuel-ndimwiza-explore-les-divinites-sacrees-des-communautes-riveraines/”>Gardiens invisibles du lac Kivu : Emmanuel Ndimwiza explore les divinités sacrées des communautés riveraines</a>"
             },
             "geometry": {
                 "coordinates": [
@@ -115,8 +115,8 @@ export const landmarks = {
                 "hr": "#000000",
                 "ID": 5,
                 "name": "Kalengera",
-                "type": "Cosmologie et connaissances traditionnelles",
-                "note": "Kalengera est l’esprit protecteur des pentes et forêts environnantes, invoquée pour assurer l’abondance des pluies, la fertilité des terres, la sécurité des pêcheurs et la santé du bétail. Rituels sont régulièrement pratiqués pour la rendre hommage, avec des offrandes faites dans des sanctuaires naturels. Son rôle est vitaux dans la régulation naturelle de l’écosystème selon les traditions locales, et sa présence est ressentie dans les cycles de vie qui rythment le quotidien des communautés.<br/><br/><a target='blank' href='https://dec-rdc.org/gardiens-invisibles-du-lac-kivu-emmanuel-ndimwiza-explore-les-divinites-sacrees-des-communautes-riveraines/'>Gardiens invisibles du lac Kivu : Emmanuel Ndimwiza explore les divinités sacrées des communautés riveraines</a>"
+                "type": "Cosmology and traditional knowledge",
+                "note": "Kalengera is the guardian spirit of the surrounding hillsides and forests, invoked to ensure abundant rainfall, fertile land, the safety of fishermen and the health of livestock. Rituals are regularly performed to pay homage to her, with offerings made in natural shrines. Her role is vital in the natural regulation of the ecosystem according to local traditions, and her presence is felt in the life cycles that punctuate the daily life of communities. <br/><br/><a target=“blank” href=“https://dec-rdc.org/gardiens-invisibles-du-lac-kivu-emmanuel-ndimwiza-explore-les-divinites-sacrees-des-communautes-riveraines/”>Gardiens invisibles du lac Kivu : Emmanuel Ndimwiza explore les divinités sacrées des communautés riveraines</a>"
             },
             "geometry": {
                 "coordinates": [
@@ -136,8 +136,8 @@ export const landmarks = {
                 "hr": "#000000",
                 "ID": 5,
                 "name": "Kalengera",
-                "type": "Cosmologie et connaissances traditionnelles",
-                "note": "Kalengera est l’esprit protecteur des pentes et forêts environnantes, invoquée pour assurer l’abondance des pluies, la fertilité des terres, la sécurité des pêcheurs et la santé du bétail. Rituels sont régulièrement pratiqués pour la rendre hommage, avec des offrandes faites dans des sanctuaires naturels. Son rôle est vitaux dans la régulation naturelle de l’écosystème selon les traditions locales, et sa présence est ressentie dans les cycles de vie qui rythment le quotidien des communautés.<br/><br/><a target='blank' href='https://dec-rdc.org/gardiens-invisibles-du-lac-kivu-emmanuel-ndimwiza-explore-les-divinites-sacrees-des-communautes-riveraines/'>Gardiens invisibles du lac Kivu : Emmanuel Ndimwiza explore les divinités sacrées des communautés riveraines</a>"
+                "type": "Cosmology and traditional knowledge",
+                "note": "Kalengera is the guardian spirit of the surrounding hillsides and forests, invoked to ensure abundant rainfall, fertile land, the safety of fishermen and the health of livestock. Rituals are regularly performed to pay homage to her, with offerings made in natural shrines. Her role is vital in the natural regulation of the ecosystem according to local traditions, and her presence is felt in the life cycles that punctuate the daily life of communities. <br/><br/><a target=“blank” href=“https://dec-rdc.org/gardiens-invisibles-du-lac-kivu-emmanuel-ndimwiza-explore-les-divinites-sacrees-des-communautes-riveraines/”>Gardiens invisibles du lac Kivu : Emmanuel Ndimwiza explore les divinités sacrées des communautés riveraines</a>"
             },
             "geometry": {
                 "coordinates": [
@@ -157,8 +157,8 @@ export const landmarks = {
                 "hr": "#000000",
                 "ID": 6,
                 "name": "Rugema",
-                "type": "Cosmologie et connaissances traditionnelles",
-                "note": "Rugema est un dieu redouté par les pêcheurs qui, comme les autres divinités, vit dans les profondeurs du lac et sur les îlots rocheux, et qui, en cas d'offense, peut déclencher des tempêtes ou vider les filets. Son rôle est vitaux dans la régulation naturelle de l’écosystème selon les traditions locales, et sa présence est ressentie dans les cycles de vie qui rythment le quotidien des communautés.<br/><br/><a target='blank' href='https://dec-rdc.org/les-dieux-du-lac-emmanuel-ndimwiza-revele-les-croyances-sacrees-des-pecheurs-du-kivu/'>Les dieux du lac : Emmanuel Ndimwiza révèle les croyances sacrées des pêcheurs du Kivu</a>"
+                "type": "Cosmology and traditional knowledge",
+                "note": "Rugema is a god feared by fishermen who, like other deities, lives in the depths of the lake and on rocky islets, and who, if offended, can unleash storms or empty fishing nets. His role is vital in the natural regulation of the ecosystem according to local traditions, and his presence is felt in the life cycles that punctuate the daily life of communities. <br/><br/><a target=“blank” href=“https://dec-rdc.org/les-dieux-du-lac-emmanuel-ndimwiza-revele-les-croyances-sacrees-des-pecheurs-du-kivu/”>Les dieux du lac : Emmanuel Ndimwiza révèle les croyances sacrées des pêcheurs du Kivu</a>"
             },
             "geometry": {
                 "coordinates": [

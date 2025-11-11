@@ -1,12 +1,23 @@
 <script>
-    import { points } from "../points.js";
-    export let onSelect = (point) => {}; // ✅ expects a single argument
+    import { points } from "../data/points.js";
+    import { t, waitLocale } from "svelte-i18n";
+    import { onMount, createEventDispatcher } from "svelte";
+
+    export let onSelect = (point) => {}; // callback from parent
 
     let query = "";
     let focused = false;
+    let ready = false;
 
-    let searchIndex = [];
+    const dispatch = createEventDispatcher();
 
+    // Wait until translations are loaded
+    onMount(async () => {
+        await waitLocale();
+        ready = true;
+    });
+
+    // Build search index from points
     $: searchIndex = points.features.map((f) => ({
         id: f.properties.ID,
         name: f.properties.name,
@@ -15,8 +26,9 @@
         properties: f.properties,
     }));
 
+    // Compute filtered results
     $: results =
-        query.length > 1 || focused // ✅ Show all if focused and query is empty
+        query.length > 1 || focused
             ? searchIndex
                   .filter((p) =>
                       p.name?.toLowerCase().includes(query.toLowerCase()),
@@ -24,23 +36,29 @@
                   .sort((a, b) => a.name.localeCompare(b.name))
             : [];
 
+    // Handle selecting a point
     function selectPoint(point) {
-        console.log("Calling onSelect with point:", point);
-        onSelect(point); // Will trigger handleSelectPoint from App.svelte
+        onSelect(point); // Trigger parent handler
+        dispatch("select", point); // Optional Svelte event
         query = "";
-        results = [];
+        focused = false;
     }
 </script>
 
 <div class="search-container">
-    <input
-        type="text"
-        bind:value={query}
-        placeholder="Chercher par nom ..."
-        on:focus={() => (focused = true)}
-        on:blur={() => setTimeout(() => (focused = false), 200)}
-    />
-    {#if results.length}
+    {#if ready}
+        <input
+            type="text"
+            bind:value={query}
+            placeholder={$t("app.placeholder")}
+            on:focus={() => (focused = true)}
+            on:blur={() => setTimeout(() => (focused = false), 200)}
+        />
+    {:else}
+        <input type="text" placeholder="..." disabled />
+    {/if}
+
+    {#if results.length && focused}
         <div class="search-results">
             {#each results as r}
                 <button
@@ -48,7 +66,8 @@
                     class="result-item"
                     on:click={() => selectPoint(r)}
                 >
-                    <strong style="color: {r.properties.hr};">{r.name}</strong> <small style="color: {r.properties.hr};">({r.type})</small>
+                    <strong style="color: {r.properties.hr};">{r.name}</strong>
+                    <small style="color: {r.properties.hr};">({r.type})</small>
                 </button>
             {/each}
         </div>
@@ -60,7 +79,7 @@
         position: absolute;
         top: 25px;
         left: 25px;
-        z-index: 9999;
+        z-index: 9998;
         background: white;
         padding: 0.5rem;
         border-radius: 0.5rem;

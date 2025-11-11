@@ -1,4 +1,4 @@
-export const points = {
+export const points_fr = {
     "type": "FeatureCollection",
     "features": [
         {

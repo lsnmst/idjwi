@@ -1,16 +1,20 @@
 <script>
   import L from "leaflet";
   import "leaflet-minimap";
-  import { points } from "./points.js";
-  import { landmarks } from "./landmarks.js";
+  import { points } from "./data/points.js";
+  import { landmarks } from "./data/landmarks.js";
   import SearchPoints from "./components/SearchPoints.svelte";
   import { onMount } from "svelte";
+  import { t } from "svelte-i18n";
 
   let showModal = true;
+  let modalEl;
   let map;
   let geoJsonLayer;
   let activeMarkerID = null;
   let mapEl;
+
+  const isMobile = window.innerWidth < 768 || /Mobi|Android/i.test(navigator.userAgent);
 
   function createIcon(feature, zoom = 15) {
     const { svgHtml, iconWidth, iconHeight, name, ID } = feature.properties;
@@ -18,7 +22,7 @@
     const scale = Math.pow(1.2, zoom - baseZoom);
     const newWidth = iconWidth * scale;
     const newHeight = iconHeight * scale;
-    const showLabel = zoom > 14;
+    const showLabel = zoom > 14 && !isMobile;;
 
     return L.divIcon({
       className: `custom-svg-icon marker-${ID}`,
@@ -106,7 +110,7 @@
 
         return marker;
       },
-      onEachFeature: onEachFeature, // reuse the same function
+      onEachFeature: onEachFeature,
     });
 
     landmarkLayer.addTo(map);
@@ -135,10 +139,27 @@
     }, 700);
   }
 
+  // ✅ Detect outside clicks to close modal
+  function handleClickOutside(event) {
+    if (showModal && modalEl && !modalEl.contains(event.target)) {
+      showModal = false;
+    }
+  }
+
   onMount(() => {
+    document.addEventListener("click", handleClickOutside);
+
+    const isMobile =
+      window.innerWidth < 768 || /Mobi|Android/i.test(navigator.userAgent);
+    const initialZoom = isMobile ? 13 : 14;
+    const minZoom = 12;
+    const maxZoom = 16;
+
     map = L.map(mapEl, {
       center: [-2.22458, 29.03813],
-      zoom: 14,
+      zoom: initialZoom,
+      minZoom,
+      maxZoom,
       maxBounds: [
         [-2.6293, 28.6075],
         [-1.5339, 29.507],
@@ -150,8 +171,8 @@
     const mainTileLayer = L.tileLayer(
       "https://www.alessandromusetta.com/geo/tiles/idjwi/{z}/{x}/{y}.jpg",
       {
-        minZoom: 12,
-        maxZoom: 16,
+        minZoom,
+        maxZoom,
         attribution: "",
         noWrap: true,
         bounds: [
@@ -163,7 +184,6 @@
 
     mainTileLayer.addTo(map);
 
-    // ✅ Add MiniMap
     const miniMapLayer = L.tileLayer(
       "https://www.alessandromusetta.com/geo/tiles/minimapidjwi/{z}/{x}/{y}.png",
       {
@@ -183,20 +203,24 @@
     });
 
     miniMap.addTo(map);
-
     L.control.scale({ maxWidth: 150 }).addTo(map);
 
     addGeoJson();
     addLandmarkLayer();
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
   });
 </script>
 
+<!-- 🧭 UI Elements -->
 <div class="bottom-bar">
   <div class="bottom-bar-content">
     <img src="./logo-dec.png" alt="Logo" class="bottom-bar-logo" />
-    <span class="bottom-bar-title"
-      >carte du tourisme écoculturel et spirituel de l'île d'Idjwi</span
-    >
+    <span class="bottom-bar-title">
+      {$t("app.title")}
+    </span>
   </div>
 </div>
 
@@ -204,28 +228,20 @@
 <div class="top-bar"></div>
 <div class="right-bar"></div>
 
+<!-- 🗺️ Map container -->
 <div bind:this={mapEl} class="map-container">
   {#if showModal}
-    <div class="modal-bottom-right">
-      <button class="modal-close" on:click={() => (showModal = false)}>×</button
-      >
-      <div class="modal-content">
-        <h3>CARTOGRAPHIER LA MÉMOIRE DES ANCÊTRES POUR UN AVENIR DURABLE</h3>
-        <p>
-          La province du Nord et du Sud Kivu de la République démocratique du
-          Congo et l'île d'Idjwi sont connues dans le monde entier pour être une
-          zone de conflit armé. Le réseau
-          <a href="https://dec-rdc.org/" target="_blank"
-            >Droits, Environnement et Citoyenneté - DEC</a
-          >
-          a créé cette carte pour renverser cette rhétorique et montrer la beauté
-          et la richesse de la nature et des personnes qui vivent sur l'île d'Idjwi
-          et au bord du lac Kivu.<br /><br />Contactez DEC par e-mail à
-          <a href="mailto:dec.organisation21@gmail.com"
-            >dec.organisation21@gmail.com</a
-          > pour contribuer à la carte, obtenir plus d'informations et donner pour
-          supporter l'initiative.
-        </p>
+    <div class="modal-backdrop">
+      <div class="modal-bottom-right" bind:this={modalEl}>
+        <button class="modal-close" on:click={() => (showModal = false)}
+          >×</button
+        >
+        <div class="modal-content">
+          <h3>{$t("app.modalTitle")}</h3>
+          <p>
+            {@html $t("app.modalBody")}
+          </p>
+        </div>
       </div>
     </div>
   {/if}
