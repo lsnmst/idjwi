@@ -1,9 +1,11 @@
 <script>
     import { points } from "../data/points.js";
+    import { toponyms } from "../data/toponyms.js";
     import { t, waitLocale } from "svelte-i18n";
     import { onMount, createEventDispatcher } from "svelte";
 
-    export let onSelect = (point) => {}; // callback from parent
+    export let onSelect = (point) => {};
+    export let activeLayers = ["points", "toponyms"]; // array of active layer IDs
 
     let query = "";
     let focused = false;
@@ -17,26 +19,38 @@
         ready = true;
     });
 
-    // Build search index from points
-    $: searchIndex = points.features.map((f) => ({
-        id: f.properties.ID,
-        name: f.properties.name,
-        type: f.properties.type,
-        coordinates: f.geometry.coordinates,
-        properties: f.properties,
-    }));
+    // Build unified search index from both layers
+    $: searchIndex = [
+        ...points.features.map((f) => ({
+            id: f.properties.ID,
+            name: f.properties.name,
+            type: f.properties.type,
+            coordinates: f.geometry.coordinates,
+            properties: f.properties,
+            layerType: "points",
+        })),
+        ...toponyms.features.map((f) => ({
+            id: f.properties.ID,
+            name: f.properties.name,
+            type: f.properties.type,
+            coordinates: f.geometry.coordinates,
+            properties: f.properties,
+            layerType: "toponyms",
+        })),
+    ];
 
-    // Compute filtered results
-    $: results =
-        query.length > 1 || focused
+    // Reactive filtered results based on query AND active layers
+    $: filteredResults =
+        query.length > 0 || focused
             ? searchIndex
-                  .filter((p) =>
-                      p.name?.toLowerCase().includes(query.toLowerCase()),
+                  .filter(
+                      (p) =>
+                          p.name?.toLowerCase().includes(query.toLowerCase()) &&
+                          activeLayers.includes(p.layerType),
                   )
                   .sort((a, b) => a.name.localeCompare(b.name))
             : [];
 
-    // Handle selecting a point
     function selectPoint(point) {
         onSelect(point); // Trigger parent handler
         dispatch("select", point); // Optional Svelte event
@@ -58,16 +72,20 @@
         <input type="text" placeholder="..." disabled />
     {/if}
 
-    {#if results.length && focused}
+    {#if filteredResults.length && focused}
         <div class="search-results">
-            {#each results as r}
+            {#each filteredResults as r}
                 <button
                     type="button"
                     class="result-item"
                     on:click={() => selectPoint(r)}
                 >
-                    <strong style="color: {r.properties.hr};">{r.name}</strong>
-                    <small style="color: {r.properties.hr};">({r.type})</small>
+                    <strong style="color: {r.properties.hr || '#000'}"
+                        >{r.name}</strong
+                    >
+                    <small style="color: {r.properties.hr || '#000'}"
+                        >({r.type})</small
+                    >
                 </button>
             {/each}
         </div>

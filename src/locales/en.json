@@ -1,8 +1,9 @@
 {
     "app": {
-        "title": "Map of Ecocultural and Spiritual Tourism of Idjwi Island",
-        "modalTitle": "MAPPING ANCESTRAL MEMORY FOR A SUSTAINABLE FUTURE",
-        "modalBody": "The provinces of North and South Kivu in the Democratic Republic of Congo, and the island of Idjwi, are widely acknowledged to be areas of armed conflict. The <a href=“https://dec-rdc.org/” target=“_blank”>Rights, Environment and Citizenship - DEC</a> network created this map to counter this rhetoric and showcase the beauty and richness of nature and the people who live on Idjwi Island and Lake Kivu. <br /><br />Contact DEC by email at <a href=“mailto:contact@dec-rdc.org”>contact@dec-rdc.org</a> to contribute to the map, get more information, and donate to support the initiative.",
+        "title": "ATLAS OF THE BUGUNGU PEOPLE",
+        "title_": "Bugungu cartography, by Bugungu People",
+        "modalTitle": "ATLAS OF THE BUGUNGU PEOPLE",
+        "modalBody": "Description of the Atlas of the Bugungu People. Max 1,000 characthers without space",
         "placeholder": "Search by name..."
     }
 }

@@ -3,5 +3,5 @@ import { svelte } from '@sveltejs/vite-plugin-svelte';
 
 export default defineConfig({
   plugins: [svelte()],
-  base: '/idjwi/', // <-- Add this line, use your repo name
+  base: '/bugungu-atlas/', // <-- Add this line, use your repo name
 });
