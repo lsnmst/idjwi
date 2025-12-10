@@ -139,7 +139,7 @@
     }, 700);
   }
 
-  // ✅ Detect outside clicks to close modal
+  // CLOSE MODAL
   function handleClickOutside(event) {
     if (showModal && modalEl && !modalEl.contains(event.target)) {
       showModal = false;
@@ -214,7 +214,7 @@
   });
 </script>
 
-<!-- 🧭 UI Elements -->
+<!-- UI -->
 <div class="bottom-bar">
   <div class="bottom-bar-content">
     <img src="./logo-dec.png" alt="Logo" class="bottom-bar-logo" />
@@ -228,7 +228,7 @@
 <div class="top-bar"></div>
 <div class="right-bar"></div>
 
-<!-- 🗺️ Map container -->
+<!-- MAP -->
 <div bind:this={mapEl} class="map-container">
   {#if showModal}
     <div class="modal-backdrop">
