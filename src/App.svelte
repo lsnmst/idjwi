@@ -14,7 +14,8 @@
   let activeMarkerID = null;
   let mapEl;
 
-  const isMobile = window.innerWidth < 768 || /Mobi|Android/i.test(navigator.userAgent);
+  const isMobile =
+    window.innerWidth < 768 || /Mobi|Android/i.test(navigator.userAgent);
 
   function createIcon(feature, zoom = 15) {
     const { svgHtml, iconWidth, iconHeight, name, ID } = feature.properties;
@@ -22,7 +23,7 @@
     const scale = Math.pow(1.2, zoom - baseZoom);
     const newWidth = iconWidth * scale;
     const newHeight = iconHeight * scale;
-    const showLabel = zoom > 14 && !isMobile;;
+    const showLabel = zoom > 14 && !isMobile;
 
     return L.divIcon({
       className: `custom-svg-icon marker-${ID}`,
@@ -36,13 +37,55 @@
     });
   }
 
+  function renderImage(url, caption) {
+    if (!url) return "";
+
+    return `
+    <figure class="popup-media">
+      <img src="${url}" alt="${caption || ""}" />
+      ${caption ? `<figcaption>${caption}</figcaption>` : ""}
+    </figure>
+  `;
+  }
+
+  function renderYouTube(videoUrl) {
+    if (!videoUrl) return "";
+
+    const match = videoUrl.match(
+      /(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&]+)/,
+    );
+
+    if (!match) return "";
+
+    const videoId = match[1];
+
+    return `
+    <div class="popup-media">
+      <iframe
+        src="https://www.youtube.com/embed/${videoId}"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  `;
+  }
+
   function onEachFeature(feature, layer) {
+    const { name, type, note, hr, image, video, caption } = feature.properties;
+
     const popupContent = `
       <hr style='height:4px;background-color:${feature.properties.hr};border:none;'>
       <p style='font-size:0.6em;margin:5px'>${feature.properties.type}</p>
       <p style='margin:5px'><b>${feature.properties.name}</b></p>
       <hr>
-      <p style='font-size:0.6em;margin:5px;padding-bottom:30px'>${feature.properties.note}</p>`;
+      <p style='font-size:0.6em;margin:5px;padding-bottom:30px'>${feature.properties.note}</p>
+      ${renderImage(image)}
+      ${renderYouTube(video)}
+      <p style="font-size:0.6em;margin:5px;padding-bottom:10px">
+        ${caption || ""}
+      </p>
+    `;
 
     layer.bindPopup(popupContent);
 
@@ -276,6 +319,45 @@
     border-radius: 4px;
     margin-bottom: 2px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .leaflet-popup-content {
+    max-width: 280px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 12px;
+    overflow-x: hidden;
+  }
+
+  .popup-media {
+    width: 100%;
+    max-width: 100%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+  }
+
+  .popup-media img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: contain;
+  }
+
+  .popup-media iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .popup-media figcaption {
+    font-size: 0.65em;
+    color: #555;
+    margin-top: 4px;
+    text-align: center;
   }
 
   .minimapz {
