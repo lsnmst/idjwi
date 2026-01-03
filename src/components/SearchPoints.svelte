@@ -3,8 +3,6 @@
     import { t, waitLocale } from "svelte-i18n";
     import { onMount, createEventDispatcher } from "svelte";
 
-    export let onSelect = (point) => {}; // callback from parent
-
     let query = "";
     let focused = false;
     let ready = false;
@@ -38,28 +36,40 @@
 
     // Handle selecting a point
     function selectPoint(point) {
-        onSelect(point); // Trigger parent handler
-        dispatch("select", point); // Optional Svelte event
+        dispatch("select", point);
         query = "";
         focused = false;
     }
+
+    // Prevent blur from hiding results when clicking them
+    function handleMouseDownResult(e) {
+        e.preventDefault();
+    }
 </script>
 
-<div class="search-container">
+<div
+    class="search-container"
+    on:click|stopPropagation
+    on:mousedown|stopPropagation
+>
     {#if ready}
         <input
             type="text"
             bind:value={query}
             placeholder={$t("app.placeholder")}
-            on:focus={() => (focused = true)}
-            on:blur={() => setTimeout(() => (focused = false), 200)}
+            on:focus={() => {
+                focused = true;
+                dispatch("focus");
+            }}
+            on:input={() => dispatch("focus")}
+            on:blur={() => setTimeout(() => (focused = false), 100)}
         />
     {:else}
         <input type="text" placeholder="..." disabled />
     {/if}
 
     {#if results.length && focused}
-        <div class="search-results">
+        <div class="search-results" on:mousedown|preventDefault>
             {#each results as r}
                 <button
                     type="button"

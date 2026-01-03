@@ -350,6 +350,12 @@ button:focus-visible {
   text-transform: uppercase;
 }
 
+.search-container {
+  position: fixed;
+  z-index: 10000;
+  pointer-events: auto;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

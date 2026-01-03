@@ -159,31 +159,30 @@
     landmarkLayer.addTo(map);
   }
 
-  function handleSelectPoint(point) {
+  function handleSelectPoint(event) {
+    const point = event.detail; // ✅ THIS IS THE POINT
+
+    if (!geoJsonLayer || !map) return;
+
     const [lng, lat] = point.coordinates;
     const target = L.latLng(lat, lng);
-    const targetZoom = Math.max(14, Math.min(map.getMaxZoom(), 15));
+    const targetZoom = Math.min(map.getMaxZoom(), 15);
 
     map.flyTo(target, targetZoom, { duration: 1.2 });
 
-    setTimeout(() => {
+    map.once("moveend zoomend", () => {
       geoJsonLayer.eachLayer((layer) => {
-        if (layer.feature?.properties?.ID === point.id) {
+        if (+layer.feature?.properties?.ID === +point.id) {
           layer.openPopup();
         }
       });
-
-      document
-        .querySelectorAll(".custom-svg-icon.svg-active")
-        .forEach((el) => el.classList.remove("svg-active"));
-
-      const icon = document.querySelector(`.marker-${point.id}`);
-      if (icon) icon.classList.add("svg-active");
-    }, 700);
+    });
   }
 
   // CLOSE MODAL
   function handleClickOutside(event) {
+    if (event.target.closest(".search-container")) return;
+    if (event.target.closest(".leaflet-container")) return;
     if (showModal && modalEl && !modalEl.contains(event.target)) {
       showModal = false;
     }
@@ -290,7 +289,15 @@
   {/if}
 </div>
 
-<SearchPoints onSelect={handleSelectPoint} />
+<SearchPoints
+  on:select={handleSelectPoint}
+  on:focus={() => {
+    if (map) {
+      map.closePopup(); // close currently open popup
+      activeMarkerID = null;
+    }
+  }}
+/>
 
 <style>
   .map-container {
